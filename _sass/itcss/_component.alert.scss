@@ -25,13 +25,13 @@
 .alerts__link {
 
     //  Default mobile styles
-
     display: inline-block;
     background: no-repeat $icon--bell center $color--primary;    
     color: transparent;
     padding: $padding--normal*2 $padding--normal;
     margin: 0;
     font-weight: normal;
+    text-decoration: none;
 
     
     @media screen and (min-width: $breakpoint--tablet) {
