@@ -1,0 +1,117 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * HEADING
+ * 
+ * Heading component styles
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+/*div*/.heading {
+
+    // Default mobile styles
+    display: block;
+    margin: 0;
+
+}
+
+/*a*/.heading__button--primary {
+    
+    // Default mobile styles
+    vertical-align: -1.3rem;
+
+}
+
+/*div*/.heading--top {
+    
+    // Default mobile styles
+    border-bottom: solid 1px $color--lighter;
+    font-weight: $font__weight--bold;
+    overflow: hidden;
+    padding-right: $padding--half;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    // Tablet and up only styles
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        border-top: solid 1px $color--lighter;
+
+    }
+
+    // Mobile and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        border-top: solid 1px $color--lighter;
+        margin-top: 0;
+
+    }
+
+}
+
+.heading--dark {
+
+    // Default mobile styles
+    background-color: $color--dark;
+    color: $color--lightest;
+    padding: $padding--normal;
+    
+}
+
+.heading--color {
+
+    // Default mobile styles
+    background-color: $color--primary;
+    color: $color--lightest;
+    padding: $padding--normal;
+
+}
+
+/*a*/.heading__button {
+    background-color: $color--primary;
+}
+
+/*a*/.heading__button:hover {
+    background-color: $color--primary-hover;
+}
+
+/*div*/.heading__text {
+    padding: $padding--normal*.9;
+
+    @media print {
+        padding: $padding--normal*.9 $padding--normal;
+    }
+}
+
+/*h1*/.heading__header {
+    margin-top: 0;
+}
+
+/*------------------------------------*\
+    #LG AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--lg) {
+
+    /*div*/.heading__text {
+        padding: 0;
+    }
+}

@@ -1,0 +1,139 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * WIDTHS
+ *
+ * Provides a set of common sizings that can be used to lay out elements on
+ * pages flexibly and responsively.
+ *
+ **
+ *
+ * CONTENTS
+ * TBD..................To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+.one-fifth, .one-of-five, .twenty-percent, .percent-20 {
+    width: 20% !important;
+}
+
+.one-quarter, .one-of-four, .two-of-eight, .twenty-five-percent, .percent-25 {
+    width: 25% !important;
+}
+
+.one-half, .one-of-two, .two-quarters, .two-of-four, .three-of-six, 
+.four-of-eight, .fifty-percent, .percent-50 {
+    width: 50% !important;
+}
+
+.one-third, .one-of-three, .two-of-six, .thirty-three-percent, .percent-33 {
+    width: 33.33% !important;
+}
+
+.two-thirds, .two-of-three, .four-of-six, .sixty-six-percent, .percent-66 {
+    width: 66.67% !important;
+}
+
+.one-whole, .one-of-one, .two-halves, .two-of-two, .three-thirds, 
+.three-of-three, .four-quarters, .four-of-four, .eight-of-eight, 
+.one-hundred-percent, .percent-100 {
+    width: 100% !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #MD AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--tablet) {
+
+    .md-one-fifth, .md-one-of-five, .md-twenty-percent, .md-percent-20 {
+        width: 20% !important;
+    }
+
+    .md-one-quarter, .md-one-of-four, .md-two-of-eight, .md-twenty-five-percent, .md-percent-25 {
+        width: 25% !important;
+    }
+
+    .md-one-half, .md-one-of-two, .md-two-quarters, .md-two-of-four, .md-three-of-six,
+    .md-four-of-eight, .md-fifty-percent, .md-percent-50 {
+        width: 50% !important;
+    }
+
+    .md-one-third, .md-one-of-three, .md-two-of-six, .md-thirty-three-percent, .md-percent-33 {
+        width: 33.33% !important;
+    }
+
+    .md-two-thirds, .md-two-of-three, .md-four-of-six, .md-sixty-six-percent, .md-percent-66 {
+        width: 66.67% !important;
+    }
+
+    .md-one-whole, .md-one-of-one, .md-two-halves, .md-two-of-two, .md-three-thirds,
+    .md-three-of-three, .md-four-quarters, .md-four-of-four, .md-eight-of-eight,
+    .md-one-hundred-percent, .md-percent-100 {
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LG AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--desktop) {
+
+    .lg-one-fifth, .lg-one-of-five, .lg-twenty-percent, .lg-percent-20 {
+        width: 20% !important;
+    }
+
+    .lg-one-quarter, .lg-one-of-four, .lg-two-of-eight, .lg-twenty-five-percent, .lg-percent-25 {
+        width: 25% !important;
+    }
+
+    .lg-one-half, .lg-one-of-two, .lg-two-quarters, .lg-two-of-four, .lg-three-of-six,
+    .lg-four-of-eight, .lg-fifty-percent, .lg-percent-50 {
+        width: 50% !important;
+    }
+
+    .lg-one-third, .lg-one-of-three, .lg-two-of-six, .lg-thirty-three-percent, .lg-percent-33 {
+        width: 33.33% !important;
+    }
+
+    .lg-two-thirds, .lg-two-of-three, .lg-four-of-six, .lg-sixty-six-percent, .lg-percent-66 {
+        width: 66.67% !important;
+    }
+
+    .lg-one-whole, .lg-one-of-one, .lg-two-halves, .lg-two-of-two, .lg-three-thirds,
+    .lg-three-of-three, .lg-four-quarters, .lg-four-of-four, .lg-eight-of-eight,
+    .lg-one-hundred-percent, .lg-percent-100 {
+        width: 100% !important;
+    }
+}

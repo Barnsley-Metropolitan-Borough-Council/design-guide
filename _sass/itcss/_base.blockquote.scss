@@ -1,0 +1,35 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+
+/**
+ *
+ * BLOCKQUOTE
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TBD
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+blockquote:before {
+    content: '"';
+}
+
+blockquote {
+    font-style: italic;
+}
+
+blockquote:after {
+    content: '"';
+}

@@ -1,0 +1,225 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * TABLE OBJECT
+ * 
+ * Responsive table .
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #COLLAPSED - SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+.table--responsive {
+
+    @media screen {
+        border-width: 0;
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        border-width: 1px;
+    }
+
+}
+
+.table--responsive td {
+
+    @media screen {
+        
+        display:block;    
+        padding: $padding--half;
+        border-bottom: 1px solid $color--lighter; 
+        text-align: left !important; // prevent content editor overriding  
+
+        &:first-child {
+            padding-top: .5em;
+        }
+
+        &:last-child {
+            padding-bottom: .5em;
+        }
+
+        &:before {
+            content: attr(data-heading);
+            font-weight: $font__weight--bold;
+            display: inline-block;
+            width: 40%;
+            vertical-align: top;
+     
+            @media (min-width: $breakpoint--tablet) {
+            display: none;
+            }
+        }
+
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: table-cell;
+    }
+
+}
+
+.table--responsive td div {
+    
+    @media screen {
+
+        display: inline-block;
+        width: 60%;
+
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {        
+
+        display: block;
+        width: auto;
+
+    }
+
+}
+
+.table--responsive tr {
+
+    @media screen {
+        
+        margin: $padding--half 0;
+        display: block;
+        border:1px solid $color--lighter;
+    
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: table-row;
+        border: 0;
+    }
+}
+
+.table--responsive thead th, .table--responsive thead td {    
+    
+    @media screen {
+        font-weight: $font__weight--bold;
+        display: none;
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: table-cell;
+        border-bottom: solid 1px $color--lighter;
+    }
+}
+
+.table--responsive tbody th {
+
+    @media screen {
+
+        display: block;
+        text-align:left;        
+        padding: $padding--half;
+        background-color: $color--primary;
+        color: $color--lightest;
+
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: table-cell;
+        background-color: $color--lighterest;
+        color: $color--dark
+    }
+
+}
+
+.table__row--collapse td {
+
+    @media screen {
+
+        display: block;
+    
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        display: table-cell;
+
+    }
+
+}
+
+.table__row--collapse th {
+
+    @media screen {
+
+        background-image: $icon--next-light;
+        background-position: right center;
+        background-repeat:no-repeat;
+        background-size:contain;
+
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        
+        background-image: none;
+                
+    }
+
+}
+
+.table__row--collapse .table__heading--expanded {
+
+    @media screen {
+
+        background-image: $icon--down-light;
+
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        
+        background-image: none;
+                
+    }
+
+}
+
+.table__row--collapse th:hover {
+
+    cursor: pointer;
+
+}
+
+.table__row--collapse .table__cell--collapsed {
+
+    @media screen {
+
+        display: none;
+
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        display: table-cell;
+
+    }
+
+}
+
+.table--responsive thead {
+
+    @media screen {
+
+        display: none;
+
+    }
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: table-header-group;
+    }
+
+}

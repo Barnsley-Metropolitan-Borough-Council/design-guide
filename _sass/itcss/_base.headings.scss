@@ -1,0 +1,41 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * HEADINGS
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TBD
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    margin-bottom: $padding--normal*.25;
+
+    @media print {
+       display:block;
+       page-break-after: avoid;
+       page-break-inside: avoid;
+    }
+}
+
+h2, h3, h4, h5, h6 {
+
+    @media print {
+        margin-top: $padding--normal*1.25;
+    }
+
+}

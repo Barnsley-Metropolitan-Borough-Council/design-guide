@@ -1,0 +1,61 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * LINKS
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TBD
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+body {
+
+    background-color: $color--darkest;
+    font-family: $font__family--normal;
+
+    @media print {
+        background-color: transparent;
+        padding: $padding--normal;
+    }
+}
+
+.body--transactional {
+
+    background-color: $color--page;
+
+}
+
+article {
+    background-color: $color--page;
+
+    @media print {
+        background-color: transparent;
+    }
+}
+
+@page {
+  size: A4;
+  margin: 0.5cm;
+}
+
+@media print {
+
+    p {
+        page-break-inside: avoid !important;
+        display: block !important;
+    }
+
+}

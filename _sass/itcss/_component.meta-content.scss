@@ -1,0 +1,50 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * META CONTENT
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+.meta-content {
+    border-top: $color--lighter $border-size--normal solid;
+    text-align:center;
+    padding: $padding--normal 0;
+    font-size: 0.9rem;
+
+    @media screen and (min-width: $breakpoint--desktop) {
+        text-align:left;
+    }
+
+    @media print {
+        display: none;
+    }
+}
+
+.meta-content__link {
+
+    color: $color--darkish;
+    text-decoration:underline;
+    display:block;
+
+}
+
+.meta-content__link:hover {
+
+    color: $color--primary;
+
+}

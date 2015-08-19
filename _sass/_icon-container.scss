@@ -1,0 +1,132 @@
+.icon--container {
+	
+	border: 1px solid #ccc;
+	padding: 1rem;
+	display: inline-block;
+	margin: 0.5rem;
+	width: 22%;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: 2rem;
+	height:150px;
+	vertical-align:bottom;
+
+}
+
+.icon--close {
+	background-image: $image--close;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--nearby {
+	background-image: $image--nearby;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--report {
+	background-image: $image--report;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--apply {
+	background-image: $image--apply;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--pay {
+	background-image: $image--pay;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--previous {
+	background-image: $image--previous;
+}
+
+.icon--search-slim {
+	background-image: $icon--search-slim;
+}
+
+.icon--news {
+	background-image: $icon--news;
+}
+
+.icon--feedback {
+	background-image: $icon--feedback;
+}
+
+.icon--jobs {
+	background-image: $icon--jobs;
+}
+
+.icon--alerts {
+	background-image: $icon--alerts;
+}
+
+.icon--events {
+	background-image: $icon--events;
+}
+
+.icon--next {
+	background-image: $image--next;
+}
+
+.icon--next-fat {
+	background-image: $icon--next-fat;
+}
+
+.icon--next-slim {
+	background-image: $icon--next-slim;
+}
+
+.icon--next-light {
+	background-image: $icon--next-light;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--down-light {
+	background-image: $icon--down-light;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--previous-fat {
+	background-image: $icon--previous-fat;
+}
+
+.icon--previous-slim {
+	background-image: $icon--previous-slim;
+}
+
+.icon--search-slim {
+	background-image: $icon--search-slim;
+}
+
+.icon--search-fat {
+	background-image: $icon--search-fat;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--previous-white {
+	background-image: $icon--previous-white;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--menu {
+	background-image: $icon--menu;
+	background-color: $color--primary;
+	color: #fff;
+}
+
+.icon--bell {
+	background-image: $icon--bell;
+	background-color: $color--primary;
+	color: #fff;
+}

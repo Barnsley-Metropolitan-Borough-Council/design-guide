@@ -1,0 +1,28 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * Google Search Trumps
+ *
+ * To be determined.
+ *
+ **
+ *
+ * CONTENTS
+ * TBD..................To be determined.
+ *
+ */
+
+.cse .gsc-control-cse, .gsc-control-cse table {
+
+    border: none !important;
+
+}
+
+.cse .gsc-control-cse, .gsc-control-cse tr {
+    
+    // Needed to counteract our default styles
+    background: none !important;
+
+}

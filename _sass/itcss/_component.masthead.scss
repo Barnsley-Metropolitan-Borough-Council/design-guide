@@ -1,0 +1,296 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * MASTHEAD
+ * 
+ * Covers the corporate identity bar that includes the logo, strapline
+ * a few key links and the search field at the top of every page.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+/*div*/.masthead {
+
+    // Default mobile styles
+    text-align: right;
+    background-color: $color--darkest;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LOGO
+\*------------------------------------*/
+
+.masthead__logo {
+    
+    // Default mobile styles
+    float: left;
+    margin-top: 0.3rem;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+    
+        margin-top: 0.1rem;
+
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #STRAPLINE
+\*------------------------------------*/
+
+.masthead__strapline {
+
+    // Default mobile styles
+    display: none; // Header spacing is missing on mobile
+    
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        color: $color--lightest;
+        display: inline-block;
+        margin: 0;
+        padding: $padding--normal*2 $padding--normal ; // This provides the header spacing on desktop
+        float: right; 
+
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+
+.masthead__nav { 
+
+    // Default mobile styles
+    display: inline-block;
+
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+        
+        position: static;
+        display: inline-block;
+        margin: $padding--normal*2 $padding--normal $padding--normal*2 0; // This provides the header spacing on tablet
+        
+    }
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        float: left;
+        margin-top: $padding--normal*2;
+
+    }
+
+}
+
+.masthead__nav__button {
+
+    padding: $padding--normal*2 $padding--normal;    
+    display: inline-block;    
+    background: no-repeat $icon--menu center;
+    color: transparent;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+                
+        display: none;
+        background: none;
+
+    }
+
+}
+
+.masthead__nav__container {
+
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: $padding--normal;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        display: block;
+        position: static;
+        padding: 0;
+
+    }
+
+}
+
+.masthead__nav > ul {
+
+    position: absolute;
+    left: 0;
+    right: 0;    
+
+    @media screen and (min-width: $breakpoint--tablet) {
+    
+        position: static;
+
+    }
+
+}
+
+.masthead__nav__item {
+
+    display: block;
+ 
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        display: inline;
+        padding: 0 0 0 1rem;
+    
+    }
+
+}
+
+.masthead__nav__link {
+
+    // Default mobile styles
+    color: $color--lightest;
+    
+}
+
+.masthead__nav__link:hover {
+    text-decoration: underline;
+}
+
+
+/*------------------------------------*\
+    Masthead Button Object
+\*------------------------------------*/
+
+.masthead__button {
+
+    display: inline-block;
+
+}
+
+
+
+/*------------------------------------*\
+    #SEARCH - TODO REPLACE WITH OBJECT
+\*------------------------------------*/
+
+.masthead__search {
+
+    // Default mobile styles
+    display: none;
+
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+    
+        background-color: $color--lightest;
+        //border-bottom: solid 1px $color--lighter;
+        color: $color--darkest;
+        display: block;
+        padding: $padding--normal;
+        text-align: center;
+
+    }
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        padding: $padding--normal*2.2 0; // Edges the search box (removes left and right padding)
+
+    }
+ 
+}
+
+.masthead__search h1 {
+
+    // Default mobile styles
+    display: none;
+
+}
+
+.masthead__search label {
+
+    // Default mobile styles
+    display: none;
+
+}
+
+// TODO: Consider replacing this with an object
+.masthead__search input[type=search] {
+
+    // Default mobile styles
+    display: none;
+    
+
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+    
+        -webkit-appearance: none;
+        border: solid 1px $color--lighter;
+        border-right: 0px;
+        box-sizing: border-box;
+        display: inline-block;
+        -webkit-appearance: none;
+        width: 85%;        
+    
+    }
+
+    // Desktop and up styles
+    @media (min-width: $breakpoint--desktop) {
+    
+        width: 90%;
+    
+    }
+    
+}
+
+.masthead__search .search__button {
+
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+    
+        padding: $padding--normal $padding--normal*2;
+        width: 15%;        
+    
+    }
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        width: 10%;
+    
+    }
+
+}
+
+.masthead__qr-code {
+
+    float:right;
+
+}
+
+.masthead__qr-code .qr-code__image {
+
+    max-height:100px;
+
+}

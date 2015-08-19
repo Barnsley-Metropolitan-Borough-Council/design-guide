@@ -1,0 +1,169 @@
+﻿/**
+ * TASKBAR
+ * 
+ * Looks after the homepage band of top tasks by creating large fixed areas
+ * that customers can click on to activate the slide in menu.
+ *
+ */
+/// <reference path="../barnsley-council.scss" />
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+.c-taskbar {
+
+    // Default mobile styles
+    background-color: $color--darker;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+.c-taskbar a {
+
+    // Default mobile styles
+    background-position: $padding--normal $padding--normal;
+    background-repeat: no-repeat;
+    background-size: $font__size--normal*3;
+    color: $color--lightest;
+    
+    & .name {
+
+        display: block;
+        font-size: $font__size--normal*1.6;
+        padding: $padding--normal*.8 $padding--normal $padding--normal*.7 $padding--normal*5;
+
+    }
+    
+    & .introduction {
+
+        display: block;
+        font-size: $font__size--normal;
+        padding: $padding--half $padding--normal $padding--normal $padding--normal*5;
+
+    }
+
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        & .name {
+
+            min-height: $padding--normal*4;
+            padding-top: $padding--normal*.8;
+
+        }
+
+        & .introduction {
+
+            padding: $padding--normal;
+
+        }
+
+    }
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        & .name {
+
+            min-height: $padding--normal*5.5;
+
+        }
+
+        & .introduction {
+
+            border-top: solid 2px $color--primary;
+        }
+
+    }
+}
+
+.c-taskbar li {
+
+    // Default mobile styles
+    border-top: solid 2px $color--primary;
+    vertical-align: top;
+    
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        border-right: solid 2px $color--primary;
+        display: inline-block;
+        width: 50%;
+
+        &:nth-child(3), &:last-child {
+
+            // Default mobile styles
+            border-bottom: none;
+
+        }
+
+        &:nth-child(2), &:last-child {
+
+            // Default mobile styles
+            border-right: none;
+
+        }
+
+    }
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        border-bottom: none;
+        width: 25%;
+
+        &:nth-child(2) {
+
+            border-right: solid 2px $color--primary;
+
+        }
+
+    }
+    
+}
+
+.c-taskbar a:hover {
+
+    // Default mobile styles
+    background-color: $color--dark;
+}
+
+.c-taskbar a.nearby { 
+
+    // Default mobile styles
+    background-image: $image--nearby, none;
+    
+}
+
+.c-taskbar a.apply {
+
+    // Default mobile styles
+    background-image: $image--apply, none;
+
+}
+
+.c-taskbar a.pay {
+
+    // Default mobile styles
+    background-image: $image--pay, none;
+
+}
+
+.c-taskbar a.report {
+
+    // Default mobile styles
+    background-image: $image--report, none;
+
+}

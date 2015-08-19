@@ -1,0 +1,35 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * LISTS
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TBD
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+ul {
+    list-style-type: square;
+
+    @media print {
+        page-break-inside: avoid;
+    }
+
+}
+
+li>ul {
+    list-style-type: circle;
+}

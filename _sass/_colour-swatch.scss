@@ -1,0 +1,90 @@
+
+h1, h2, h3, h4, h5 {
+	display: block;
+}
+
+.color-swatch {
+	width: 29%;
+	padding: 2rem;
+	border: 1px solid #ccc;
+	display: inline-block;
+	text-align: center;
+	margin: 1rem;
+}
+
+.color-swatch code {
+	background-color: #fff;
+	padding: 0.5rem;
+}
+
+.color-swatch--darkestest {
+	background-color: $color--darkestest
+}
+
+.color-swatch--darker {
+	background-color: $color--darker
+}
+
+.color-swatch--darkish {
+	background-color: $color--darkish
+}
+
+.color-swatch--lightish {
+	background-color: $color--lightish
+}
+
+.color-swatch--light {
+	background-color: $color--light
+}
+
+.color-swatch--middle {
+	background-color: $color--middle
+}
+
+.color-swatch--lighter {
+	background-color: $color--lighter
+}
+
+.color-swatch--lighterest {
+	background-color: $color--lighterest
+}
+
+.color-swatch--lightest {
+	background-color: $color--lightest
+}
+
+.color-swatch--primary {
+	background-color: $color--primary
+}
+
+.color-swatch--honest {
+	background-color: $color--honest
+}
+
+.color-swatch--proud {
+	background-color: $color--proud
+}
+
+.color-swatch--team {
+	background-color: $color--team
+}
+
+.color-swatch--excellent {
+	background-color: $color--excellent
+}
+
+.color-swatch--honest-dark {
+	background-color: $color--honest-dark
+}
+
+.color-swatch--proud-dark {
+	background-color: $color--proud-dark
+}
+
+.color-swatch--team-dark {
+	background-color: $color--team-dark
+}
+
+.color-swatch--excellent-dark {
+	background-color: $color--excellent-dark
+}

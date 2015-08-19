@@ -1,0 +1,102 @@
+---
+layout: default
+---
+
+<div class="post" style="float:right; width: 80%;">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <span class="sub-header">{{ page.usage }}</span>
+  </header>
+
+  <aside class="meta container--float">
+
+  	<dl class="meta-data">
+  		
+  		{% if page.status %}
+		<dt>Status</dt>
+		<dd>{{ page.status }}</dd>
+		{% endif %}
+
+		{% if page.scss %}
+  		<dt>SCSS</dt>
+  		<dd>{{ page.scss }}</dd>
+  		{% endif %}
+
+		{% if page.js %}
+  		<dt>Javascript</dt>
+  		<dd>{{ page.js }}</dd>
+  		{% endif %}
+
+  	</dl>
+
+  </aside>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>
+
+<div class="content--side-menu" style="float:left; width: 16%; border-right: 1px solid #ddd; overflow-wrap: break-word">
+	<h1>Menu</h1>
+	<div>
+	    <h2>About</h2>
+	    {% for post in site.about %}
+	      <li class="ui-list">
+	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	      </li>
+	    {% endfor %}
+	  </div>
+
+	  <div>
+	  <h2>Principles</h2>
+	    {% for post in site.principles %}
+	      <li class="ui-list">
+	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	      </li>
+	    {% endfor %}
+	  </div>
+	  
+	  <div>
+	  <h2>Foundations</h2>
+	    {% for post in site.foundations %}
+	      <li class="ui-list">
+	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	      </li>
+	    {% endfor %}    
+	  </div>
+
+	  <div>
+	  <h2>Objects</h2>
+	    {% for post in site.objects %}
+	      <li class="ui-list">
+	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	      </li>
+	    {% endfor %}    
+	  </div>
+
+	  <div>
+	  <h2>Components</h2>
+	    {% for post in site.components %}
+	      <li class="ui-list">
+	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	      </li>
+	    {% endfor %}    
+	  </div>
+
+	  <div>
+	  <h2>Templates</h2>
+	    {% for post in site.templates %}
+	      <li class="ui-list">
+	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	      </li>
+	    {% endfor %}    
+	  </div>
+</div>

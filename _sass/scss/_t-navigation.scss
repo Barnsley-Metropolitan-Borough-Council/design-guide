@@ -1,0 +1,291 @@
+﻿/**
+ * NAV
+ * 
+ * Sets up a navigation list in the form a UL with options to lay it out
+ * horizontally or vertically depending on the context its being used in.
+ *
+ */
+/// <reference path="../barnsley-council.scss" />
+
+
+
+
+
+/*------------------------------------*\
+    #A TO Z
+\*------------------------------------*/
+
+.t-nav--atoz li {
+
+    // Default mobile styles
+    display: none;
+
+    &.all {
+
+        display: block;
+
+    }
+
+    &:last-child {
+
+        border-bottom: solid 2px $color--page;
+
+    }
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        display: inline-block;
+        text-align: center;
+        width: 3.846%;
+        
+        &.all {
+
+            display: none;
+
+        }
+
+        &:first-child a {
+
+            border-left: none;
+
+        }
+
+    }
+}
+
+.t-nav--atoz a {
+
+    // Default mobile styles
+    background-image: $icon--next-slim;
+    background-position: $padding--normal*.6 center;
+    background-repeat: no-repeat;
+    background-size: $font__size--normal;
+    color: $color--darkest;
+    padding: $padding--normal $padding--normal $padding--normal $padding--normal*2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        background:none;
+        border-left: solid 2px $color--lighter;
+        display: block;
+        padding: $padding--normal;
+        overflow: visible;
+
+        &:hover {
+
+            background-color: $color--lighter;
+
+        }
+    
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #BREADCRUMBS
+\*------------------------------------*/
+
+.t-nav--breadcrumb {
+
+    // Default mobile styles
+    display: none;
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        display: block;
+        padding-bottom: $font__size--normal;
+
+    }
+
+}
+
+.t-nav--breadcrumb li {
+
+    // Default mobile styles
+    display: none;
+
+    &:before {
+        content: ' > ';
+    }
+
+    &:first-child:before {
+        content: '';
+    }
+
+    &:last-child {
+
+        display: none;
+
+    }
+
+    &:nth-last-child(2) {
+
+        display: inline;
+
+        & a {
+
+            background-color: $color--primary;
+            background-image: $icon--previous-fat;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: $font__size--normal*4;
+            padding: $padding--normal*1.4 0 $padding--normal*1.4 $font__size--normal*4;
+            display: inline-block;
+            overflow: hidden;
+            margin: 0;
+            text-indent: 1000px;
+            vertical-align: -$font__size--normal*1.1;
+            width: $font__size--normal*4;
+        }
+
+        &:before {
+            content: '';
+        }        
+
+    }
+
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        display: inline;
+
+        &:last-child {
+            display: none;
+        }
+
+        &:nth-last-child(2) {
+
+            &:before {
+                content: ' > ';
+            }
+
+            & a {
+                background: none;
+                display: inline;
+                padding: initial;
+                vertical-align:initial;
+                text-indent: 0;
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+    #SLIM STYLES
+\*------------------------------------*/
+
+.t-nav--slim li {
+
+    border-bottom: solid 1px $color--lighter;
+    
+    &:first-child {
+        border-top: solid 1px $color--lighter;
+    }
+
+}
+
+.t-nav--slim a {
+
+    // Default mobile styles
+    background-image: $icon--next-slim;
+    background-position: $padding--normal*.6 $padding--normal*1.1;
+    background-repeat: no-repeat;
+    background-size: $font__size--normal*1.4;
+    color: $color--darkest;
+    padding: $padding--normal $padding--normal $padding--normal $padding--normal*2;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #FAT STYLES
+\*------------------------------------*/
+
+.t-nav--fat li {
+
+    border-bottom: solid 1px $color--lighter;
+    
+    &:first-child {
+        border-top: solid 1px $color--lighter;
+    }
+
+}
+
+.t-nav--fat a {
+
+    // Default mobile styles
+    background-image: $icon--next-fat;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: $font__size--normal*4;
+    padding: $padding--normal*1.2 0 $padding--normal*1.2 $font__size--normal*5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LIGHT STYLES
+\*------------------------------------*/
+
+.t-nav--light li {
+
+    border-bottom: solid 1px $color--lighter;
+    
+    &:first-child {
+        border-top: solid 1px $color--lighter;
+    }
+
+}
+
+.t-nav--light a {
+
+    // Default mobile styles
+    background-image: $icon--next-light;
+    background-position: $padding--normal*.6 center;
+    background-repeat: no-repeat;
+    background-size: $font__size--normal;
+    padding: $padding--normal $padding--normal $padding--normal $padding--normal*2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #HOMEPAGE STYLES
+\*------------------------------------*/
+

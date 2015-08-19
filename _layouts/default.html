@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="body--transactional">
+
+    {% include sprites.html %}
+
+    {% include header.html %}
+
+     <article>
+        <div class="container container--page container--transactional">
+        {{ content }}
+      </div>
+    </article>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

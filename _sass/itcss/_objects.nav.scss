@@ -1,0 +1,28 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * NAV
+ * 
+ * Styles navigation objects
+ *
+ */
+
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li {
+    display: inline;
+    list-style-type: none
+}
+.nav--stacked li {
+    color: #222;
+    display: list-item
+}
+.nav--stacked a {
+    display: block;
+    padding: 0.5rem 0
+}

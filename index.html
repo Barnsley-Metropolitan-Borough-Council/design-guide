@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Barnsley Council Design Guide</h1>
+
+  <div>
+  
+  <div>
+    <h2>About</h2>
+    {% for post in site.about %}
+      <li class="ui-list">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </div>
+
+  <div>
+  <h2>Principles</h2>
+    {% for post in site.principles %}
+      <li class="ui-list">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </div>
+  
+  <div>
+  <h2>Foundations</h2>
+    {% for post in site.foundations %}
+      <li class="ui-list">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}    
+  </div>
+
+  <div>
+  <h2>Objects</h2>
+    {% for post in site.objects %}
+      <li class="ui-list">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}    
+  </div>
+
+  <div>
+  <h2>Components</h2>
+    {% for post in site.components %}
+      <li class="ui-list">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}    
+  </div>
+
+  <div>
+  <h2>Templates</h2>
+    {% for post in site.templates %}
+      <li class="ui-list">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}    
+  </div>
+
+  <div>
+  <h2>Version History</h2>
+
+  <ul class="ui-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  </div>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

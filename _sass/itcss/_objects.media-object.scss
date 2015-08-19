@@ -1,0 +1,140 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * MEDIA OBJECT
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #COLLAPSED - SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+/*div*/.media {
+    overflow:hidden;
+    _overflow:visible; 
+    zoom:1;
+}
+
+ /*div*/.media__item {
+    float: left; 
+}
+
+/*img*/.media__object {
+    display: block;
+    margin: auto;
+
+    @media print {
+        display: none;
+    }
+}
+
+/*div*/.media__text {
+    overflow:hidden;
+    _overflow:visible; 
+    zoom:1;       
+}
+
+
+
+
+
+/*------------------------------------*\
+    #EXPANDED - SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+/*div*/.media--expanded {
+    overflow:hidden;
+    _overflow:visible; 
+    zoom:1;
+}
+
+ /*div*/.media--expanded .media__item {
+    text-align: center;
+}
+
+/*img*/.media--expanded .media__object {
+    display: inline-block;
+
+    @media print {
+        display: none;
+    }
+}
+
+/*div*/.media--expanded .media__text {
+    overflow:hidden;
+    _overflow:visible; 
+    zoom:1;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #EXPANDED - MD AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--md) {
+
+    /*div*/
+    .md-media--expanded .media__item {
+        float: none;
+        text-align: center;
+    }
+
+    /*img*/
+    .md-media--expanded .media__object {
+        display: block;
+    }
+
+    /*div*/
+    .md-media--expanded .media__text {
+        text-align: center;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #EXPANDED - LG AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--lg) {
+
+    /*div*/
+    .lg-media--expanded .media__item {
+        float: none;
+        text-align: center;
+    }
+
+    /*img*/
+    .lg-media--expanded .media__object {
+        display: block;
+    }
+}

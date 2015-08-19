@@ -1,0 +1,60 @@
+﻿.progress-container {
+    height:100%;
+    width: auto;
+    display:block;
+}
+
+.progress-indicator {
+
+  margin: auto;
+  font-size: 10px;
+  position: relative;
+  top: 30%;
+  text-indent: -9999em;
+  border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0) translateY(-50%);
+  -ms-transform: translateZ(0) translateY(-50%);
+  transform: translateZ(0) translateY(-50%);
+  -webkit-animation: progress-indicator-spin 1.1s infinite linear;
+  animation: progress-indicator-spin 1.1s infinite linear;
+
+}
+
+.progress-indicator,
+.progress-indicator:after {
+
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+
+}
+
+@-webkit-keyframes progress-indicator-spin {
+
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes progress-indicator-spin {
+  
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
