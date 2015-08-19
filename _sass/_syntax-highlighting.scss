@@ -10,9 +10,9 @@
 }
 
 p > code {
-    background-color: #888;
-    padding: 0.25em;
-    color: #fff;
+    background-color: #eee;
+    padding: 0.25em 0.5em;
+    color: #000;
     display: inline-block
 }
 
@@ -40,11 +40,8 @@ p > code {
 }
 
 .highlight {
-    background-color: #fafafa;
-    padding: 0 1rem;
-    box-shadow: inset rgba(0,0,0,0.1) 0em 0.2em 1em;
-    border: 1px solid #bbb;
-    border-radius: 5px;
+    background-color: #eee;
+    padding: 1rem;    
     margin: 1rem 0 2rem;
 
     .c     { color: #998; font-style: italic } // Comment
