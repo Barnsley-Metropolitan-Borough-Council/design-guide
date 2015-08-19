@@ -17,7 +17,7 @@ The media element eg. image / video should be contained in an element with class
 <div class="media">
     <a class="media__link" href="#">
         <div class="media__item">
-            <img src="http://placehold.it/50x50" alt="" class="media__object">                                    
+            <img src="//placehold.it/50x50" alt="" class="media__object">                                    
         </div>
         <div class="media__text">
             Better Barnsley
@@ -30,7 +30,7 @@ The media element eg. image / video should be contained in an element with class
     <div class="media">
         <a class="media__link" href="#">
             <div class="media__item">
-                <img src="http://placehold.it/50x50" alt="" class="media__object">                                    
+                <img src="//placehold.it/50x50" alt="" class="media__object">                                    
             </div>
             <div class="media__text">
                 Better Barnsley
@@ -52,6 +52,7 @@ Add the class `media--expanded` to the parent `media` element
     <div class="media media--expanded"></div>
 {% endhighlight %}
 
+
 ### Expanded on tablets
 
 Add the class `md-media--expanded` to the parent `media` element
@@ -59,6 +60,7 @@ Add the class `md-media--expanded` to the parent `media` element
 {% highlight html %}
     <div class="media md-media--expanded"></div>
 {% endhighlight %}
+
 
 ### Expanded on desktops
 
