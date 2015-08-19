@@ -28,3 +28,5 @@ collections:
         output: true
     templates:
         output: true
+    copywriting:
+        output: true

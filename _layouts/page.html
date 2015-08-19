@@ -23,7 +23,7 @@ title: Barnsley Council Design Guide
 
 		{% if page.scss %}
   		<dt>SCSS</dt>
-  		<dd>{{ page.scss }}</dd>
+  		<dd><a href="https://github.com/BarnsleyCouncil/design-guide/blob/gh-pages/_sass/{{ page.scss }}">{{ page.scss }}</a></dd>
   		{% endif %}
 
 		{% if page.js %}
@@ -44,7 +44,7 @@ title: Barnsley Council Design Guide
 <nav class="documentation__menu">
 
 		<section class="documentation__category">
-		    <h2 class="documentation__category__heading">About</h2>
+		    <h2 class="documentation__category__heading">Basics</h2>
 		    <ul class="ui-list">
 		    {% for post in site.about %}
 		      <li class="documentation__category__item">		        
@@ -55,10 +55,11 @@ title: Barnsley Council Design Guide
 		    </ul>
 	  	</section>
 
-		<section class="documentation__category">
-		    <h2 class="documentation__category__heading">Principles</h2>
-		    <ul class="ui-list">
-		    {% for post in site.principles %}
+	  	<section class="documentation__category">
+		    <h2 class="documentation__category__heading">Copywriting</h2>
+		    <ul class="ui-list">		    
+		    {% assign sortedPosts = site.copywriting | sort: 'order' %}
+		    {% for post in sortedPosts %}
 		      <li class="documentation__category__item">		        
 		          <a class="documentation__category__link" href="{{ post.url | prepend: site.baseurl }}">	{{ post.title }}
 		          </a>
