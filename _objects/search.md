@@ -15,6 +15,6 @@ Basic styling to search form elements. Hides the search label and adds padding t
 </div>
 
 {% highlight html %}
-    <label for="search" class="ui-search__label">Search</label>
-    <input type="text" class="ui-search__field" name="search" placeholder="Search" />
+<label for="search" class="ui-search__label">Search</label>
+<input type="text" class="ui-search__field" name="search" placeholder="Search" />
 {% endhighlight %}

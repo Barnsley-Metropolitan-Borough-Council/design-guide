@@ -18,9 +18,9 @@ Removes list specific styling from a list element
 </div>
 
 {% highlight html %}
-    <ul class="ui-list">
-        <li>Element one</li>
-        <li>Element two</li>
-        <li>Element three</li>
-    </ul>
+<ul class="ui-list">
+    <li>Element one</li>
+    <li>Element two</li>
+    <li>Element three</li>
+</ul>
 {% endhighlight %}

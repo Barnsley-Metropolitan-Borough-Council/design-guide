@@ -25,13 +25,13 @@ Suitable for use in headers and footers and when you want the list elements to d
 </div>
 
 {% highlight html %}
-    <nav class="nav">
-        <ul>
-            <li><a href="/">Link One</a></li>
-            <li><a href="/">Link Two</a></li>
-            <li><a href="/">Link Three</a></li>
-        </ul>
-    </nav>
+<nav class="nav">
+    <ul>
+        <li><a href="/">Link One</a></li>
+        <li><a href="/">Link Two</a></li>
+        <li><a href="/">Link Three</a></li>
+    </ul>
+</nav>
 {% endhighlight %}
 
 
@@ -50,11 +50,11 @@ Suitable for stacked navigation for example submenus
 </div>
 
 {% highlight html %}
-    <nav class="nav nav--stacked">
-        <ul>
-            <li><a href="/">Link One</a></li>
-            <li><a href="/">Link Two</a></li>
-            <li><a href="/">Link Three</a></li>
-        </ul>
-    </nav>
+<nav class="nav nav--stacked">
+    <ul>
+        <li><a href="/">Link One</a></li>
+        <li><a href="/">Link Two</a></li>
+        <li><a href="/">Link Three</a></li>
+    </ul>
+</nav>
 {% endhighlight %}

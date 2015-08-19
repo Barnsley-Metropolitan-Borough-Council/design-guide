@@ -56,7 +56,7 @@ A heading, used on the homepage of the corporate website to divide sections.
 </div>
 
 {% highlight html %}
-    <h1 id="notice-header" class="heading heading--dark">You may need to know about...</h1>
+<h1 id="notice-header" class="heading heading--dark">You may need to know about...</h1>
 {% endhighlight %}
 
 ## Coloured heading

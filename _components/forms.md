@@ -108,17 +108,17 @@ Recommended for forms with a small number of fields, such as login forms. You ca
 </div>
 
 {% highlight html %}
-    <form class="form--inline">
-        <div>
-            <label for="firstname"><input type="text" size="20" id="firstname">
-        </div>
-        <div>
-            <label for="lastname"><input type="text" size="20" id="lastname">
-        </div>
-        <div class="form__actions">
-            <input type="submit" value="Register" type="button button--default button--primary" />
-        </div>
-    </form>
+<form class="form--inline">
+    <div>
+        <label for="firstname"><input type="text" size="20" id="firstname">
+    </div>
+    <div>
+        <label for="lastname"><input type="text" size="20" id="lastname">
+    </div>
+    <div class="form__actions">
+        <input type="submit" value="Register" type="button button--default button--primary" />
+    </div>
+</form>
 {% endhighlight %}
 
 ### Fieldset
@@ -133,10 +133,10 @@ If you use a fieldset please title the grouping with an appropriately named `leg
 </div>
 
 {% highlight html %}
-    <fieldset>
-        <legend>About you</legend>
-        <!-- Form fields -->
-    </fieldset>
+<fieldset>
+    <legend>About you</legend>
+    <!-- Form fields -->
+</fieldset>
 {% endhighlight %}    
 
 ### Label
@@ -148,7 +148,7 @@ Make sure form elements have a simple, straightforward label.
 </div>
 
 {% highlight html %}
-    <label for="name"></label><input type="text" id="name" name="name" />
+<label for="name"></label><input type="text" id="name" name="name" />
 {% endhighlight %}
 
 ### Input
@@ -160,7 +160,7 @@ Use the correct HTML5 input type where possible. Make use of HTML5 validation at
 </div>
 
 {% highlight html %}
-    <label for="email">Email</label><input type="email" required="required" id="email" name="email" />
+<label for="email">Email</label><input type="email" required="required" id="email" name="email" />
 {% endhighlight %}
 
 ### Textarea
@@ -177,10 +177,10 @@ Textareas should not be wider than 80 characters long
 </div>
 
 {% highlight html %}
-    <div>
-    <label for="textarea_demo">Sample Textarea</label>
-        <textarea id="textarea_demo" rows="3" cols="80" name="textarea" ></textarea>
-    </div>
+<div>
+<label for="textarea_demo">Sample Textarea</label>
+    <textarea id="textarea_demo" rows="3" cols="80" name="textarea" ></textarea>
+</div>
 {% endhighlight %}
 
 ### Select
@@ -198,13 +198,13 @@ Make sure select inputs are labelled, the default entry should not be a selectio
 </div>
 
 {% highlight html %}
-    <div>
-        <label for="select_demo">Select field:</label>
-        <select id="select_demo">
-            <option>Option 01</option>
-            <option>Option 02</option>
-        </select>
-    </div>
+<div>
+    <label for="select_demo">Select field:</label>
+    <select id="select_demo">
+        <option>Option 01</option>
+        <option>Option 02</option>
+    </select>
+</div>
 {% endhighlight %}
 
 ### Checkbox
@@ -220,7 +220,7 @@ This checkbox is ideal for toggling a user preference, for example opting in to 
 </div>
 
 {% highlight html %}
-    <label><input type="checkbox" /> Yes - I'll use checkboxes properly</label>
+<label><input type="checkbox" /> Yes - I'll use checkboxes properly</label>
 {% endhighlight %}
 
 #### Touch checkbox
@@ -246,19 +246,19 @@ For these to work the `input` element must be directly before to the `label` ele
 </div>
 
 {% highlight html %}
-    <div>
-        <label>What's your contact preference?</label>
-        <div class="form__group--touch">
-            <input type="checkbox" id="test1" class="checkbox__input--touch">
-            <label for="test1" class="checkbox__label--touch">Email</label>
+<div>
+    <label>What's your contact preference?</label>
+    <div class="form__group--touch">
+        <input type="checkbox" id="test1" class="checkbox__input--touch">
+        <label for="test1" class="checkbox__label--touch">Email</label>
 
-            <input type="checkbox" id="test2" class="checkbox__input--touch">
-            <label for="test2" class="checkbox__label--touch">Phone</label>
+        <input type="checkbox" id="test2" class="checkbox__input--touch">
+        <label for="test2" class="checkbox__label--touch">Phone</label>
 
-            <input type="checkbox" id="test3" class="checkbox__input--touch">
-            <label for="test3" class="checkbox__label--touch">Letter</label>
-        </div>
-    </div>                        
+        <input type="checkbox" id="test3" class="checkbox__input--touch">
+        <label for="test3" class="checkbox__label--touch">Letter</label>
+    </div>
+</div>                        
 {% endhighlight %}
 
 ### Radio
@@ -284,19 +284,19 @@ Used whenever you want to provide short list of options with a single preference
 </div>
 
 {% highlight html %}
-    <div>
-        <label>What's your gender?</label>
-            <div>
-                <label for="testa">
-                    <input type="radio" name="whosaw" id="testa">
-                    Male
-                </label>
-                <label for="testb">
-                    <input type="radio" name="whosaw" id="testb">
-                    Female
-                </label>
-            </div>
-    </div>
+<div>
+    <label>What's your gender?</label>
+        <div>
+            <label for="testa">
+                <input type="radio" name="whosaw" id="testa">
+                Male
+            </label>
+            <label for="testb">
+                <input type="radio" name="whosaw" id="testb">
+                Female
+            </label>
+        </div>
+</div>
 {% endhighlight %}
 
 
@@ -315,15 +315,15 @@ Used whenever you want to provide short list of options with a single preference
 </div>
 
 {% highlight html %}
-    <div>
-        <label>What's your gender?</label>
-            <div class="form__group--touch">
-                <input type="radio" name="gender" id="testa2" value="Male" class="checkbox__input--touch">
-                <label for="testa2" class="checkbox__label--touch">Male</label>
-                <input type="radio" name="gender" id="testb2" value="Female" class="checkbox__input--touch">
-                <label for="testb2" class="checkbox__label--touch">Female</label>   
-            </div>
-    </div>
+<div>
+    <label>What's your gender?</label>
+        <div class="form__group--touch">
+            <input type="radio" name="gender" id="testa2" value="Male" class="checkbox__input--touch">
+            <label for="testa2" class="checkbox__label--touch">Male</label>
+            <input type="radio" name="gender" id="testb2" value="Female" class="checkbox__input--touch">
+            <label for="testb2" class="checkbox__label--touch">Female</label>   
+        </div>
+</div>
 {% endhighlight %}
 
 ### Help text
@@ -341,11 +341,11 @@ If you need to provide additional context or guidance for a form control you can
 </div>
 
 {% highlight html %}
-    <div>
-        <label>Date of Birth</label>
-        <input type="text" value="" size="4" placeholder="Day" maxlength="2"/>
-        <input type="text" value="" size="4" placeholder="Month" maxlength="2" />
-        <input type="text" value="" size="6" placeholder="Year" maxlength="4"/>
-        <span class="form__message">eg. 24/08/1986</span>
-    </div>
+<div>
+    <label>Date of Birth</label>
+    <input type="text" value="" size="4" placeholder="Day" maxlength="2"/>
+    <input type="text" value="" size="4" placeholder="Month" maxlength="2" />
+    <input type="text" value="" size="6" placeholder="Year" maxlength="4"/>
+    <span class="form__message">eg. 24/08/1986</span>
+</div>
 {% endhighlight %}
