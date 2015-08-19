@@ -1,5 +1,5 @@
 ---
-title: "Build Process"
+title: "Build process"
 type: about
 layout: page
 ---
