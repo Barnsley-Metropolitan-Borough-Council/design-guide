@@ -23,14 +23,16 @@
 .documentation__menu {
 
 	display:block;
+	padding: $padding--normal*2;
+	background-color: #fafafa;
 
 	@media screen and (min-width: $breakpoint--tablet) {
 
-		display: table-cell;
-		padding: $padding--normal*2;
+		display: table-cell;		
 		border-left: 1px solid $color--lighter;
 		width: 20%;
 		vertical-align:top;
+		
 
 	}
 
