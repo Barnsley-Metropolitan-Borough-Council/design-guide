@@ -1,7 +1,7 @@
 ---
 title: "Image"
 type: objects
-scss: _assets/stylesheets/_objects.image.scss
+scss: itcss/_objects.image.scss
 usage: "Image object"
 status: production
 layout: page

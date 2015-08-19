@@ -1,7 +1,7 @@
 ---
-title: "Containers"
+title: "Container"
 type: objects
-scss: _assets/stylesheets/_objects.container.scss
+scss: itcss/_objects.container.scss
 usage: "Wrappers for elements and components"
 status: production
 layout: page

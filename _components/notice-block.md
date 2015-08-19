@@ -36,7 +36,7 @@ The block collapses to a list when viewed on mobile or tablet screens.
                                 </svg>
                     </div>
                     <div class="media__text notice-block__media-text">
-                        Have your say
+                        Help
                     </div>
                 </a>
             </div>
@@ -109,7 +109,7 @@ The block collapses to a list when viewed on mobile or tablet screens.
                                 </svg>
                     </div>
                     <div class="media__text notice-block__media-text">
-                        Have your say
+                        Help
                     </div>
                 </a>
             </div>

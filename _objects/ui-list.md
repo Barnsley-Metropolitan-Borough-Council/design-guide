@@ -1,7 +1,7 @@
 ---
-title: "UI List object"
+title: "UI List"
 type: objects
-scss: _assets/stylesheets/_objects.ui-list.scss
+scss: itcss/_objects.ui-list.scss
 usage: "UI List object"
 status: production
 layout: page

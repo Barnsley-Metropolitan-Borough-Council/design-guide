@@ -1,7 +1,7 @@
 ---
 title: "Screenshots"
 type: foundations
-usage: "Photography principles"
+usage: "Website &amp; application screenshot principles"
 status: suggestion
 layout: page
 ---

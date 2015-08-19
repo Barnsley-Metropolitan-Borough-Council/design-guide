@@ -1,7 +1,7 @@
 ---
 title: "Breadcrumbs"
 type: components
-scss: itcss/_component.breadcrumb.scss
+scss: itcss/_component.breadcrumbs.scss
 usage: "Breadcrumb style"
 status: production
 layout: page

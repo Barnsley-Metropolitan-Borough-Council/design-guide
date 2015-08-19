@@ -2,7 +2,7 @@
 title: "Logo"
 type: foundations
 module: _includes/logo.html
-scss: _assets/stylesheets/_component-logo.scss
+scss: itcss/_component.logo.scss
 usage: "Logo for presenting on header or footer"
 status: production
 layout: page

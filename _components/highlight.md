@@ -1,8 +1,7 @@
 ---
 title: "Highlight"
 type: components
-module: _includes/highlight.html
-scss: _assets/stylesheets/_component-highlight.scss
+scss: itcss/_component-highlight.scss
 usage: "Highlight component for displaying important content"
 status: alpha
 layout: page

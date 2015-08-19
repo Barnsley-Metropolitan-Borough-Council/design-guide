@@ -1,7 +1,7 @@
 ---
-title: "Media object"
+title: "Media"
 type: objects
-scss: _assets/stylesheets/_objects.media-object.scss
+scss: itcss/_objects.media-object.scss
 usage: "Media object pattern"
 status: production
 layout: page

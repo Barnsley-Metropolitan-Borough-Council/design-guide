@@ -1,7 +1,7 @@
 ---
-title: "Nav object"
+title: "Nav"
 type: objects
-scss: _assets/stylesheets/_objects.nav.scss
+scss: itcss/_objects.nav.scss
 usage: "Nav object pattern"
 status: production
 layout: page

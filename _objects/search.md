@@ -1,7 +1,7 @@
 ---
-title: "Search object"
+title: "Search"
 type: objects
-scss: _assets/stylesheets/_objects.search.scss
+scss: itcss/_objects.search.scss
 usage: "Search object pattern"
 status: production
 layout: page

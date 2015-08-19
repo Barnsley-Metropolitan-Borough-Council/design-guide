@@ -1,6 +1,7 @@
 ---
 title: "Colours"
 type: foundations
+scss: itcss/_settings.global.scss
 usage: "Colour Palettes"
 status: production
 layout: page
