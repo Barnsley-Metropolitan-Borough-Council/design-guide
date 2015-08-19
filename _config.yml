@@ -3,7 +3,7 @@ title: Barnsley Council Design Guide
 email: danielroddis@barnsley.gov.uk
 description: > # this means to ignore newlines until "baseurl:"
   Design and brand guidelines for Barnsley Council
-baseurl: "/design-guide/" # the subpath of your site, e.g. /blog/
+baseurl: "/design-guide" # the subpath of your site, e.g. /blog/
 url: "https://barnsleycouncil.github.io" # the base hostname & protocol for your site
 twitter_username: barnsleycouncil
 github_username:  thedanroddis

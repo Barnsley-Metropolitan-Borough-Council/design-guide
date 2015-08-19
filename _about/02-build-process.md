@@ -6,7 +6,7 @@ layout: page
 
 You should checkout the Barnsley Council SCSS files and create your own _manifest.scss in your project. 
 
-Customising your manifest file allows you to only include the CSS rules for components you intend to use reducing bloat and creating leaner, faster code.
+Customising your manifest file allows you to only include the CSS rules for components you intend to use reducing bloat and creating leaner, faster applications.
 
 ## Required tools
 
