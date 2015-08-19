@@ -1,12 +1,15 @@
 ---
 layout: default
+title: Barnsley Council Design Guide
 ---
 
-<div class="post" style="float:right; width: 80%;">
+<div class="documentation__panel">
+
+<main class="documentation__content">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <span class="sub-header">{{ page.usage }}</span>
+    <h1 class="documentation__heading">{{ page.title }}</h1>
+    <span class="documentation__subheading">{{ page.usage }}</span>
   </header>
 
   <aside class="meta container--float">
@@ -36,67 +39,81 @@ layout: default
     {{ content }}
   </article>
 
-</div>
+</main>
 
-<div class="content--side-menu" style="float:left; width: 16%; border-right: 1px solid #ddd; overflow-wrap: break-word">
-	<h1>Menu</h1>
-	<div>
-	    <h2>About</h2>
-	    {% for post in site.about %}
-	      <li class="ui-list">
-	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	      </li>
-	    {% endfor %}
-	  </div>
+<nav class="documentation__menu">
 
-	  <div>
-	  <h2>Principles</h2>
-	    {% for post in site.principles %}
-	      <li class="ui-list">
-	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	      </li>
-	    {% endfor %}
-	  </div>
+		<section class="documentation__category">
+		    <h2 class="documentation__category__heading">About</h2>
+		    <ul class="ui-list">
+		    {% for post in site.about %}
+		      <li class="documentation__category__item">		        
+		          <a class="documentation__category__link" href="{{ post.url | prepend: site.baseurl }}">	{{ post.title }}
+		          </a>
+		      </li>
+		    {% endfor %}
+		    </ul>
+	  	</section>
+
+		<section class="documentation__category">
+		    <h2 class="documentation__category__heading">Principles</h2>
+		    <ul class="ui-list">
+		    {% for post in site.principles %}
+		      <li class="documentation__category__item">		        
+		          <a class="documentation__category__link" href="{{ post.url | prepend: site.baseurl }}">	{{ post.title }}
+		          </a>
+		      </li>
+		    {% endfor %}
+		    </ul>
+	  	</section>
 	  
-	  <div>
-	  <h2>Foundations</h2>
-	    {% for post in site.foundations %}
-	      <li class="ui-list">
-	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	      </li>
-	    {% endfor %}    
-	  </div>
+		<section class="documentation__category">
+		    <h2 class="documentation__category__heading">Foundations</h2>
+		    <ul class="ui-list">
+		    {% for post in site.foundations %}
+		      <li class="documentation__category__item">		        
+		          <a class="documentation__category__link" href="{{ post.url | prepend: site.baseurl }}">	{{ post.title }}
+		          </a>
+		      </li>
+		    {% endfor %}
+		    </ul>
+	  	</section>
+	  
+		<section class="documentation__category">
+		    <h2 class="documentation__category__heading">Objects</h2>
+		    <ul class="ui-list">
+		    {% for post in site.objects %}
+		      <li class="documentation__category__item">		        
+		          <a class="documentation__category__link" href="{{ post.url | prepend: site.baseurl }}">	{{ post.title }}
+		          </a>
+		      </li>
+		    {% endfor %}
+		    </ul>
+	  	</section>
 
-	  <div>
-	  <h2>Objects</h2>
-	    {% for post in site.objects %}
-	      <li class="ui-list">
-	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	      </li>
-	    {% endfor %}    
-	  </div>
+		<section class="documentation__category">
+		    <h2 class="documentation__category__heading">Components</h2>
+		    <ul class="ui-list">
+		    {% for post in site.components %}
+		      <li class="documentation__category__item">		        
+		          <a class="documentation__category__link" href="{{ post.url | prepend: site.baseurl }}">	{{ post.title }}
+		          </a>
+		      </li>
+		    {% endfor %}
+		    </ul>
+	  	</section>
 
-	  <div>
-	  <h2>Components</h2>
-	    {% for post in site.components %}
-	      <li class="ui-list">
-	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	      </li>
-	    {% endfor %}    
-	  </div>
+		<section class="documentation__category">
+		    <h2 class="documentation__category__heading">Templates</h2>
+		    <ul class="ui-list">
+		    {% for post in site.templates %}
+		      <li class="documentation__category__item">		        
+		          <a class="documentation__category__link" href="{{ post.url | prepend: site.baseurl }}">	{{ post.title }}
+		          </a>
+		      </li>
+		    {% endfor %}
+		    </ul>
+	  	</section>
+</nav>
 
-	  <div>
-	  <h2>Templates</h2>
-	    {% for post in site.templates %}
-	      <li class="ui-list">
-	        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-	          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-	      </li>
-	    {% endfor %}    
-	  </div>
 </div>

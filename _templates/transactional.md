@@ -10,7 +10,7 @@ The transactional template is a minimal, tunnelled template aimed at guiding the
 
 ## Wireframe
 
-![Transactional wireframe](/assets/wireframes/transactional_template.png)
+![Transactional wireframe]({{site.baseurl}}/assets/wireframes/transactional_template.png)
 
 ## Example
 

@@ -13,7 +13,7 @@ We use **Open Sans** as the primary typeface for headings and body text with a *
 
 <div class="message message--info">
     <strong>Remember</strong>
-    Headings should reflect the document structure and there should only be one first level (top) heading on a page.
+    Headings should reflect the document structure, different level headings should not be used purely for cosmetic reasons.
 </div>
 
 <div class="example">
