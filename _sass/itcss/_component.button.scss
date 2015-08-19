@@ -1,0 +1,174 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * BUTTON
+ * 
+ * Button component with various modifiers
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+/*a*/.button {
+
+    border: none;
+    padding: $padding--normal*1.5;
+
+}
+
+/*a*/.button--default {
+         
+    // Default mobile styles
+    background-color: $color--lightest;
+    background-size: $font__size--normal*3;
+    border: solid 1px $color--lighter;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: $padding--normal;
+    text-align: center;
+
+}
+
+.button--inline {
+    display: inline-block;
+}
+
+.button--link {
+
+    // Default mobile styles
+    border: 0;
+    font-size: $font__size--normal*0.9;
+    text-decoration: underline;
+
+}
+
+/*a*/.button--primary {
+
+    // Default mobile styles
+    background-color: $color--primary;
+    background-size: $font__size--normal*3;
+    border: solid 1px $color--primary;
+    color: $color--lightest;
+    fill: $color--lightest;
+
+}
+
+.button--main {
+    
+    padding: $padding--normal $padding--normal*2.5;
+
+}
+
+/*a*/.button--primary:hover {
+    background-color: $color--primary-hover; 
+}
+
+/*------------------------------------*\
+    #ICON BUTTONS
+\*------------------------------------*/
+
+/*a*/.button--icon { // Don't use this directly
+    
+    // Default mobile styles
+    background-position: center;
+    background-repeat: no-repeat; // Only applies to icon buttons
+    overflow: hidden;
+    padding: $padding--normal*2;
+    text-indent: 1000px;
+    width: $font__size--normal*4; // Required for the overflow to work
+
+}
+
+.button--back {
+
+    // Default mobile styles
+    @extend .button--icon;
+    background-image: $icon--previous-slim;
+
+    &.button--primary {
+    
+        @extend .button--icon;
+        background-image: $icon--previous-fat;
+            
+    }
+
+}
+
+.button--next {
+
+    // Default mobile styles
+    @extend .button--icon;
+    background-image: $icon--next-slim;
+
+    &.button--primary {
+    
+        background-image: $icon--next-fat;
+            
+    }
+
+}
+
+.button--search {
+
+    // Default mobile styles
+    @extend .button--icon;
+    background-image: $icon--search-slim;
+
+    &.button--primary {
+    
+        background-image: $icon--search-fat;
+            
+    }
+
+}
+
+
+/*------------------------------------*\
+    #MD AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--md) {
+
+    /*a*/.md-button {
+        border: none;
+        padding: $padding--normal*1.5;
+    }
+}    
+
+
+
+
+/*------------------------------------*\
+    #LG AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--lg) {
+
+    /*a*/.lg-button {
+
+        border: none;
+        padding: $padding--normal*1.5;
+
+    }
+}

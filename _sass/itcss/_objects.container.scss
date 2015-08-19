@@ -1,0 +1,233 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * WRAPPERS
+ * 
+ * Covers containing elements and wrappers that are used throughout.
+ *
+ */
+/// <reference path="../barnsley-council.scss" />
+
+
+
+
+
+/*------------------------------------*\
+    #BASE STYLES
+\*------------------------------------*/
+
+.container {
+
+    margin: auto;
+
+}
+
+.container--fill {
+
+    // Default mobile styles
+    max-width: $width--screen;
+
+}
+
+
+
+
+/*------------------------------------*\
+    #SCREEN CONTAINER STYLES
+\*------------------------------------*/
+
+.container--screen {
+
+    // Default mobile styles
+    max-width: $width--screen;
+
+    @media print {
+        display: none;
+    }
+
+}
+
+
+
+
+/*------------------------------------*\
+    #PRINT CONTAINER STYLES
+\*------------------------------------*/
+
+.container--print {
+
+    // Default screen styles
+    display: none;
+
+    @media print {
+        display: block;
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #PAGE CONTAINER STYLES
+\*------------------------------------*/
+
+.container--page {
+
+    // Default mobile styles
+    max-width: $width--content;
+
+}
+
+.container--grid {
+
+    display:inline-block;
+    width: 100%;
+
+    @media print {
+
+        display:block;
+
+    }
+
+}
+
+.container--transactional {
+
+    padding: $padding--normal 0;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #TITLE CONTAINER STYLES
+\*------------------------------------*/
+
+.container--title {
+
+    // Default mobile styles
+    padding: 0 $padding--normal 0 $padding--normal;
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        padding: 0;
+
+    }
+
+    @media print {
+
+        padding: 0;
+
+    }
+
+}
+
+.container--title a {
+
+    color: $color--darkest;
+
+}
+
+
+
+/*------------------------------------*\
+    #CONTENT CONTAINER STYLES
+\*------------------------------------*/
+
+.container--content {
+
+    // Default mobile styles
+    padding: 0 $padding--normal $padding--normal $padding--normal;
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        padding: 0 0 $padding--normal 0;
+
+    }
+
+}
+
+.container--content-complementary {
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        display: inline-block;
+        margin-top: $padding--normal;
+        padding: 0 0 $padding--normal 0;
+        vertical-align: top;
+        width: 30%;
+
+    }
+
+    @media print {
+
+        display: none; 
+
+    }
+
+}
+
+.container--content-main {
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        display: inline-block;
+        padding: $padding--normal*.75 $padding--normal*4 $padding--normal 0;
+        width: 70%;
+
+    }
+
+}
+
+.container--content-complementary {
+
+    @media print {
+
+        display: none;
+
+    }
+
+}
+
+
+/*------------------------------------*\
+    #FLOAT CONTAINER STYLES
+\*------------------------------------*/
+
+.container--float:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*------------------------------------*\
+    #EMBEDDABLE CONTAINER STYLES
+\*------------------------------------*/
+
+.container--embed {
+    position: relative; 
+    padding-bottom: 56.25%; // magic number for 16:9 aspect ratio
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%;
+}
+
+.container--embed iframe, 
+.container--embed object,
+.container--embed embed {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}

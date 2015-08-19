@@ -1,0 +1,168 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * A TO Z
+ * 
+ * Responsible for creating the A to Z component
+ * this can be presented as a responsive block or a bar that only
+ * renders on large screen devices
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+.atoz {
+
+}
+
+
+
+/*------------------------------------*\
+    #BAR STYLES
+\*------------------------------------*/
+
+.atoz--bar {
+
+    display:block;            
+
+    @media screen and (min-width: $breakpoint--desktop) {
+        text-align: right;
+        background-color: $color--dark;
+        padding: $padding;
+    }
+
+}
+
+.atoz--bar .atoz__heading--bar {
+
+    // Default mobile styles
+    display:none;
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+        
+        color: $color--lightest;
+        float: left;
+        margin: 0;
+        display: inline-block;
+        font-size: $font__size--normal;
+
+    }
+
+}
+
+.atoz--bar .atoz__item {
+
+    // Default mobile styles
+    display:none;
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+        
+        color: $color--lightest;        
+        margin: 0;
+        display: inline-block;
+
+    }        
+
+}
+
+.atoz--bar .atoz__link {
+
+    padding: $padding*0.3 $padding*0.7;
+    color: $color--lightest;
+
+}
+
+.atoz--bar .atoz__link:hover {
+    
+    background-color: $color--primary;
+
+}
+
+
+/*------------------------------------*\
+    #BLOCK STYLES
+\*------------------------------------*/
+
+.atoz--block {
+
+    padding-top: $padding--normal;
+
+}
+
+.atoz--block .atoz__link {
+
+    // Default mobile styles
+    background-color: $color--darkish;
+    border-bottom: solid 1px $color--darkest;
+    border-right: solid 1px $color--darkest;
+    color: $color--lightest;
+    display: inline-block;
+    padding: $padding--normal;
+    text-align: center;
+    width: 14.285%;
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        width: 7.69%;
+
+    }
+    
+}
+
+
+.atoz--block .atoz__item {
+
+    display: inline;
+
+    &:first-child .atoz-block__link {
+
+        border-left: solid 1px $color--darkest;
+
+    }
+    
+    &:nth-child(-n+7) .atoz-block__link {
+
+        border-top: solid 1px $color--darkest;
+
+    }
+
+    &:nth-child(8) .atoz-block__link, &:nth-child(15) .atoz-block__link, &:nth-child(22) .atoz-block__link {
+
+        border-left: solid 1px $color--darkest;
+
+    }
+
+    
+    @media screen and (min-width: $breakpoint--desktop) {
+        
+        &:nth-child(-n+13) .atoz-block__link {
+
+            border-top: solid 1px $color--darkest;
+
+        }
+
+        &:nth-child(8) .atoz-block__link, &:nth-child(15) .atoz-block__link, &:nth-child(22) .atoz-block__link {
+
+            border-left: none;
+
+        }
+        
+        &:nth-child(14) .atoz-block__link {
+
+            border-left: solid 1px $color--darkest;
+
+        }
+
+    }
+
+}

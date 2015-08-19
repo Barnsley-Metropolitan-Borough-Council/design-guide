@@ -1,0 +1,45 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * SEARCH
+ * 
+ * Covers the search field and button that triggers it. This component is used
+ * in a couple of different places, including the header
+ *
+ */
+/// <reference path="../barnsley-council.scss" />
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+.ui-search__field {
+
+    // Default mobile styles
+    padding: $padding--normal;
+
+}
+
+.ui-search__label {
+
+    display: none;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #BLOCK STYLES
+\*------------------------------------*/
+
+
+
+
+

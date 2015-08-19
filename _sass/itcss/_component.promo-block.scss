@@ -1,0 +1,101 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * PROMO LIST
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+.promo-block__list {
+    display: table-row;
+}
+
+.promo-block {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+/*li*/.promo-block__item {
+    border-bottom: solid 1px $color--lighter;   
+}
+
+/*li*/.promo-block__item:last-child {
+    border-bottom: none;
+}
+
+/*a*/.promo-block__link {
+    color: $color--darkest;
+}
+
+/*li*/.promo-block__item:hover {
+    background-color: $color--lighter;
+}
+
+/*div*/.promo-block__media-item {
+    padding: $padding--normal*1.5 $padding--normal;
+}
+
+/*div*/.promo-block__media-text {
+    padding: $padding--normal*1.5 0;
+}
+
+/*svg*/.promo-block__media-object {
+    fill: $color--primary;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LG AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--lg) {
+
+    /*li*/.promo-block__item {
+        border-bottom: none;
+        border-right: solid 2px $color--lighter;
+        display: table-cell;
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+
+    /*li*/ .promo-block__item:last-child {
+        border-right: none;
+    }
+
+    /*div*/ .promo-block__media-item {
+        height: 200px;
+        padding: 0;
+    }
+
+    /*div*/ .promo-block__media-text {
+        border-top-width: 2px;
+        font-size: $font__size--normal*1.6;
+        padding: $padding--normal*1.5 $padding--normal;
+        text-align: center;
+    }
+
+}

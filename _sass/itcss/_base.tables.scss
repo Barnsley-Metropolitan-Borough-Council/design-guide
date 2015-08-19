@@ -1,0 +1,77 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * TABLES
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TBD
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+table {
+    border: solid 1px $color--light;
+    border-collapse: separate;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+th,td {    
+    padding: $padding--half;
+    border-bottom: solid 1px $color--lighter;
+    white-space: normal; 
+}
+
+thead th, thead td {
+    background-color: $color--primary;    
+    color: $color--lightest;
+    font-weight: $font__weight--bold;
+}
+
+td {
+    vertical-align: top;
+}
+
+tbody tr:hover td, 
+tbody tr:hover th {
+
+    @media screen and (min-width: $breakpoint--tablet) {
+    
+        background-color: $color--lighter;
+    
+    }
+}
+
+tr:nth-child(even) {
+
+    @media screen and (min-width: $breakpoint--tablet) {
+    
+        background-color: darken($color--lightest, 3%);
+    
+    }
+
+}
+
+tbody th {
+    color: $color--darkestest;    
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        background-color: $color--lighterest;
+    }
+}
+
+caption {
+    padding: $padding--normal;
+}

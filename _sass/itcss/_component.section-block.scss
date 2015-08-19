@@ -1,0 +1,84 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * SECTION LIST
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+/*li*/.section-list__item {
+    border-bottom: solid 1px $color--lighter;
+}
+
+/*li*/.section-list__item:hover {
+    background-color: $color--lighter;
+}
+
+/*a*/.section-list__link {
+    color: $color--darkest;
+}
+
+/*div*/.section-list__media-item {
+    padding: $padding--normal*1.6 $padding--normal;
+}
+
+/*div*/.section-list__media-text {
+    padding: $padding--normal*1.5 $padding--normal $padding--normal*1.5 0;
+}
+
+/*svg*/.section-list__media-object {
+    fill: $color--primary;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LG AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--lg) {
+    
+    /*li*/.section-list__item {
+        border-bottom-width: 2px;
+        border-right: solid 2px $color--lighter;
+        display: inline-block;
+        vertical-align: middle; // Wierdly removes a blank line after each row of inline-divs
+    }
+
+    /*li*/.section-list__item:nth-child(4n+4) {
+        border-right: none;
+    }
+    
+    /*li*/.section-list__item:nth-last-child(-n+4) {
+        border-bottom: none;
+    }
+
+    /*div*/.section-list__media-text {
+        display: table-cell;
+        font-size: $font__size--normal*1.6;
+        height: $padding--normal*10;
+        padding: $padding--normal $padding--normal*4;
+        vertical-align: middle;
+    }
+}

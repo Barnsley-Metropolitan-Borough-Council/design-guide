@@ -1,0 +1,108 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+
+/**
+ *
+ * FORMS
+ * 
+ * Form components and styles
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TBD
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+.form--inline {
+
+    label {
+
+        display: inline-block;
+        width: 20%;
+        text-align: right;
+        padding: $padding--normal;
+        vertical-align: middle;
+
+    }
+
+    .form__message {
+        
+        padding-left: 20%;
+
+    }
+
+}
+
+.form__message {
+
+    display: block;
+    font-size: $font__size--normal * 0.9;
+    color: $color--light;
+    margin: $padding--normal*-0.75 0 $padding--normal 0;
+
+    &.error {
+
+        color: $color--error;
+
+    }
+
+    &.valid {
+
+        color: $color--valid;
+
+    }
+
+}
+
+.form__element {
+
+    display: block;
+
+}
+
+.form__element--inline {
+
+    display: inline-block;
+    padding-right: $padding--half;
+
+}
+
+.input__label {
+    
+    font-weight: normal;
+
+}
+
+.checkbox__input--touch {
+    display: none;
+}
+
+.checkbox__label--touch {
+    display: inline-block;
+    padding: $padding;
+    border: 2px solid $color--lighter;
+    background: lighten($color--lighterest, 50%);
+    cursor: pointer;
+    font-weight: normal;
+    user-select: none;
+    transition: all 0.2s linear;
+}
+
+.checkbox__input--touch:checked + .checkbox__label--touch {
+    border-color: $color--primary;
+    background: transparentize($color--primary, 0.8);
+    transition: all 0.2s linear;
+}
+
+.form__group--touch {
+    margin-bottom: $padding--normal;
+}

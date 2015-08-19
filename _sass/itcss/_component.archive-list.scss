@@ -1,0 +1,47 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * ARCHIVE LIST
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+/*li*/.archive-list__item {
+    border: solid 1px $color--lighter;
+    margin-bottom: $padding--normal;
+    padding: $padding--normal;
+}
+
+/*div*/.archive-list__media-text {
+    padding: $padding--normal;
+}
+
+/*div*/.archive-list__media-item {
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint--desktop) {
+        width: auto;
+    }
+}
+
+@media (min-width: $breakpoint--lg) {
+
+    /*div*/.archive-list__media-text {
+        padding: 0 $padding--normal 0 $padding--normal;
+    }
+}

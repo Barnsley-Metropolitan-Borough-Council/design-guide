@@ -1,0 +1,202 @@
+﻿/**
+ * MENU
+ * 
+ * Styles the sliding menu that appears from the right to highlight primary
+ * and secondary items as selected by the content editors.
+ *
+ */
+/// <reference path="../barnsley-council.scss" />
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+.c-menu {
+
+    // Default mobile styles
+    background-color: $color--darker;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    -webkit-transition: all .1s;
+    -moz-transition: all .1s;
+    -ms-transition: all .1s;
+    -o-transition: all .1s;
+    transition: all .1s;
+    -webkit-transition-timing-function: linear; /* Safari and Chrome */
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    transition-timing-function: linear;
+    vertical-align: top;
+    width: 100%;
+    z-index: 999;
+
+    &.is-open {
+        
+        right: 0;
+
+    }
+
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+            
+        max-width: 60%;    
+
+    }
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+            
+        max-width: 45%; 
+
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+.c-menu__button-holder {
+
+    // Default mobile styles
+    background-color: $color--darker;
+    float: left;
+    width: 15%;
+
+}
+
+.c-menu__button--close {
+
+    // Default mobile styles
+    background-color: $color--primary;
+    background-image: $image--close, none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $font__size--normal;
+    margin: 0;
+    overflow: hidden;
+    padding-bottom: $padding--normal*2;
+    padding-top: $padding--normal*2;
+    text-indent: 1000px;
+    white-space: nowrap;
+    width: 100%;
+    
+}
+
+.c-menu__button--all {
+
+    margin-top: $padding--normal;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #CONTENT
+\*------------------------------------*/
+
+.c-menu__content {
+
+    // Default mobile styles
+    background-color: $color--dark;
+    color: $color--lightest;
+    min-height: 100%;
+    margin-left: 15%;
+    padding-left: $padding--normal;
+    padding-right: $padding--normal;
+    padding-bottom: $padding--normal;
+
+}
+
+.c-menu__content h1 {
+
+    // Default mobile styles
+    font-weight: $font__weight--bold;
+    padding-top: $padding--normal*1.6;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #MASK
+\*------------------------------------*/
+
+.c-menu__mask {
+
+    // Default mobile styles
+    background-color: $color--lightest;
+    opacity: 0.6;
+    position: fixed;
+    top: -100%;
+    left: -100%;
+    z-index: 15;
+    height: 100%;
+    width: 100%;
+    
+    &.is-open {
+
+        top: 0;
+        left: 0;
+    
+    }
+        
+}
+
+body.menu-is-open {
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #NAV
+\*------------------------------------*/
+
+.c-menu__content .o-nav li {
+
+    // Default mobile styles
+    border-bottom: solid 1px $color--darkish;
+
+    &:first-child {
+
+        border-top: none;
+
+    }
+
+    &:last-child {
+ 
+        border-bottom: none;
+
+    }
+
+}
+
+.c-menu__content .o-nav a {
+
+    // Default mobile styles
+    color: $color--lightest;
+    display: block;
+    font-weight: $font__weight--normal;
+    
+}

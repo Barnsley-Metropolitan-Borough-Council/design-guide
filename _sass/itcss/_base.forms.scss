@@ -1,0 +1,84 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+
+/**
+ *
+ * FORMS
+ * 
+ * Base styles for form elements
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TBD
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+label {
+
+    display: block;
+    margin-bottom: $padding--half;
+    font-weight: $font__weight--bold;
+
+}
+
+input, textarea, select {
+
+    border: 2px solid $color--lighter;
+    padding: $padding--half;
+    resize: none;
+    margin-bottom: $padding;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        display: inline-block;
+        width: auto;
+
+    }
+
+    &:focus {
+
+        outline: 2px solid $color--primary;
+
+    }
+
+}
+
+fieldset {
+
+    padding: 0;
+    border: 0;
+    margin: $padding--normal 0;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        padding: $padding--normal $padding--normal * 2;
+        border: 1px solid $color--lighterest;
+
+    }
+
+}
+
+legend {
+
+    font-size: $font__size--normal*1.5;
+    font-weight: $font__weight--bold;
+    color: $color--light;
+
+}
+
+.error {
+    border-color: $color--error;
+}
+
+.valid {
+    border-color: $color--valid;
+}

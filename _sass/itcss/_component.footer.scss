@@ -1,0 +1,154 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * FOOTER
+ * 
+ * Covers the closing bar at the bottom of each page that includes the logo
+ * and a few key links.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+.footer {
+
+    // Default mobile styles
+    background-color: $color--darkest;
+    color: $color--lightest;
+    text-align: center;
+    overflow: hidden;
+    
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        text-align: right;
+
+    }
+
+    // Print styles
+    @media print {
+
+        color: $color--darkest;
+        background-color: transparent;
+        page-break-before:avoid;
+
+    }
+    
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LOGO
+\*------------------------------------*/
+
+.footer .logo {
+
+    // Default mobile styles
+    display: none;
+    float: left;
+    margin-top: 0.05em;
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        display: inline-block;
+
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #STRAPLINE
+\*------------------------------------*/
+
+.footer p {
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        display: inline-block;
+        float: left;
+        margin-top: $padding--normal*2;
+
+    }
+
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+
+.footer__menu {
+
+    // Default mobile styles
+    margin-top: $padding--normal;
+
+    // Desktop and up styles
+    @media (min-width: $breakpoint--desktop) {
+    
+        display: inline-block;
+        margin-top: $padding--normal*2;
+
+    }
+
+    // Default print style
+    @media print {
+        
+        display: none;
+
+    }
+
+}
+
+.footer__menu__item {
+
+    // Default mobile styles
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 $padding--normal $padding--half $padding--normal;
+
+    &:before {
+
+        content: '';
+
+    }
+
+    // Tablet and up styles
+    @media (min-width: $breakpoint--tablet) {
+    
+        padding: 0 $padding--normal 0 0;
+
+    }
+
+}
+
+.footer__menu__link {
+
+    // Default mobile styles
+    color: $color--lightest;
+
+}
+
+.footer__menu__link:hover {
+
+    text-decoration: underline;
+
+}

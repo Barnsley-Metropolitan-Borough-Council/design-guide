@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * HIGHLIGHT
+ * 
+ * Sets up a highlighted block of content which is likely to be the single 
+ * most important piece of information thats relevant to the customer.
+ *
+ */
+
+.highlight-content {
+
+	background-color: $color--primary;
+	color: $color--lightest;
+	text-align: center;
+	padding: $padding--normal;
+	font-size: $font__size--normal * 1.5;	
+
+}
+
+.highlight-content em {
+	font-size: $font__size--normal * 3;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: bold;
+	display: block;
+}

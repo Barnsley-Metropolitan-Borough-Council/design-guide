@@ -1,0 +1,84 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * SEARCH
+ * 
+ * Looks after the homepage band of top tasks by creating large fixed areas
+ * that customers can click on to activate the slide in menu.
+ *
+ */
+/// <reference path="../barnsley-council.scss" />
+
+.search {
+
+    padding-top: 1rem;
+
+}
+
+.search .search__heading {
+
+    display: none;
+    margin: 0;
+
+}
+
+
+/*------------------------------------*\
+    #SEARCH - TODO REPLACE WITH OBJECT
+\*------------------------------------*/
+
+.search .search__label {
+
+    // Default mobile styles
+    display: none;
+
+}
+
+// TODO: Consider replacing this with an object
+.search .search__field {
+
+    // Default mobile styles
+    -webkit-appearance: none;
+    border: solid 1px $color--lighter;
+    border-right: 0px;
+    box-sizing: border-box;
+    display: inline-block;
+    -webkit-appearance: none;
+    width: 75%;
+
+    // Tablet and up styles
+    @media (min-width: $breakpoint--tablet) {
+    
+        width: 85%;
+    }
+
+    // Desktop and up styles
+    @media (min-width: $breakpoint--desktop) {
+    
+        width: 90%;
+
+    }
+    
+}
+
+.search .search__button {
+
+    // Default mobile styles
+    padding: $padding--normal $padding--normal*2;
+    width: 25%;    
+    
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+    
+        width: 15%;
+    
+    }
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        width: 10%;
+    
+    }
+}

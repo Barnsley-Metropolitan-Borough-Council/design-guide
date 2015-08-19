@@ -1,0 +1,147 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * THUMBNAILS
+ *
+ * To be determined.
+ *
+ **
+ *
+ * CONTENTS
+ * TBD..................To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+.thumbnail--tn {
+    max-height: 20px;
+    max-width: 20px;
+    width: 20px;
+}
+
+.thumbnail, .thumbnail--sm {
+    max-height: 40px;
+    max-width: 40px;
+    width: 40px;
+}
+
+.thumbnail--md {
+    max-height: 70px;
+    max-width: 70px;
+    width: 70px;
+}
+
+.thumbnail--lg {
+    max-height: 100px;
+    max-width: 100px;
+    width: 100px;
+}
+
+.thumbnail--full {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #MD AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--md) {
+
+    .md-thumbnail--tn {
+        max-height: 20px;
+        max-width: 20px;
+        width: 20px;
+    }
+    
+    .md-thumbnail, .md-thumbnail--sm {
+        max-height: 40px;
+        max-width: 40px;
+        width: 40px;
+    }
+
+    .md-thumbnail--md {
+        max-height: 70px;
+        max-width: 70px;
+        width: 70px;
+    }
+
+    .md-thumbnail--lg {
+        max-height: 100px;
+        max-width: 100px;
+        width: 100px;
+    }
+
+    .md-thumbnail--full {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LG AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--lg) {
+
+    .lg-thumbnail--tn {
+        max-height: 20px;
+        max-width: 20px;
+        width: 20px;
+    }
+
+    .lg-thumbnail, .lg-thumbnail--sm {
+        max-height: 40px;
+        max-width: 40px;
+        width: 40px;
+    }
+
+    .lg-thumbnail--md {
+        max-height: 70px;
+        max-width: 70px;
+        width: 70px;
+    }
+
+    .lg-thumbnail--lg {
+        max-height: 100px;
+        max-width: 100px;
+        width: 100px;
+    }
+
+    .lg-thumbnail--full {
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+}

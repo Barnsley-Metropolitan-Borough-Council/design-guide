@@ -1,0 +1,55 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * RELATED EFORMS
+ * 
+ * Looks after the homepage band of top tasks by creating large fixed areas
+ * that customers can click on to activate the slide in menu.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+.related-eforms {
+
+    padding-bottom: $padding--normal*2;
+
+    @media print {
+        display: none;
+    }
+
+}
+
+.related-eforms__heading {
+
+    background-color: $color--primary;
+
+}
+
+.related-eforms__nav {
+
+    // Default mobile styles
+    & li:first-child {
+
+        border-top: none;
+    
+    }
+    
+}
+
+.related-eforms__link {
+
+    background-color: $color--lighter;
+
+}
+
+.related-eforms__link:hover {
+    background-color: darken($color--lighter, $color--adjust);
+}

@@ -1,0 +1,125 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * CAROUSEL
+ * 
+ * Carousel component, dependant on Barnsley Carousel jQuery module
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+/*ul*/.carousel {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*li*/.carousel__item {
+    background-color: rgba(0,0,0,.25);
+    background-position: center top;
+    background-size: cover;
+    font-size: $font__size--normal*2;
+    display: none;
+    height: 400px;
+    opacity: 0;
+    padding: 100px $padding--normal;
+    text-align: center;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    width: 100%;
+}
+
+/*li*/.carousel__item.current {
+    display: block;
+    opacity: 1;
+}
+
+ /*a*/.carousel__link {
+    background-color: rgba(0,0,0,.35);
+    color: $color--lightest;
+    display: block;
+    font-weight: $font__weight--bold;
+    padding: $padding--normal;
+}
+
+/*a*/.carousel__button{
+
+    background-color: rgba(255,255,255,0.85);
+    color: $color--darkest;
+    cursor: pointer;
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+    width: 50%;
+}
+
+/*a*/.carousel__button:hover {
+    
+    background-color: $color--lighter;
+
+}
+
+/*a*/.carousel__button--previous {
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/*a*/.carousel__button--next {
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LG AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--lg) {
+
+    /*li*/.carousel__item {
+        height: 600px;
+        padding-top: 270px;
+    }
+
+    /*a*/.carousel__button {
+        background-color: $color--lightest;
+        box-shadow: 4px 4px 30px #888888;
+        width: $padding--normal*7;
+    }
+
+    /*a*/.carousel__button--previous {
+        bottom: auto;
+        top: 280px;
+    }
+
+    /*a*/.carousel__button--next {
+        bottom: auto;
+        top: 280px;
+    }
+}

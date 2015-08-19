@@ -1,0 +1,192 @@
+﻿ @charset "UTF-8";
+
+/**
+ *
+ * MAIN
+ *
+ * This is the starting point. Contains only imports to the files required for
+ * this project. Taking recommendations from CSS Wizardry (Harry Roberts), all
+ * files are prefixed with their ITCSS layer name and adopt BEM syntaxing for 
+ * ease of future maintainance.
+ *
+ **
+ *
+ * CONTENTS
+ *  
+ * SETTINGS
+ * Breakpoints..........Responsive breakpoint values.
+ * Variables............Global variable defaults.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Box sizing...........A more natural box layout model (c. Paul Irish).
+ * Normalize............A level playing field (c. Nicholas Gallagher).
+ *
+ * BASE
+ * Headings.............H1 to H6 styles.
+ * Links................A tag styles.
+ * Lists................UL and LI styles.
+ * Page.................Body styles.
+ * Tables...............Table styles.
+ *
+ * OBJECTS
+ * UI list..............Navigation list used in UI.
+ * Media object.........Classic media object (c. Nicole Sullivan).
+ *
+ * COMPONENTS
+ * Masthead.............The main site header bar.
+ *
+ * TRUMPS
+ * Alignments...........Positioning helpers.
+ * Spacing..............Padding and margin helpers.
+ * Visibility...........Display helpers.
+ * Widths...............Common width sizes.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SETTINGS STYLES
+\*------------------------------------*/
+
+/**
+ * Global variables, config switches.
+ */
+
+@import "itcss/_settings.breakpoints.scss";
+@import "itcss/_settings.global.scss";
+
+
+
+
+
+/*------------------------------------*\
+    #TOOLS STYLES
+\*------------------------------------*/
+
+/**
+ * Default mixins and functions.
+ */
+
+@import "itcss/_tools.mixins";
+
+
+
+
+
+/*------------------------------------*\
+    #GENERIC STYLES
+\*------------------------------------*/
+
+/**
+ * Ground-zero styles.
+ */
+
+@import "itcss/_generic.box-sizing";
+@import "itcss/_generic.normalize";
+
+
+
+
+
+/*------------------------------------*\
+    #BASE STYLES
+\*------------------------------------*/
+
+/**
+ * Unclassed HTML elements.
+ */
+
+@import "itcss/_base.headings";
+@import "itcss/_base.links";
+@import "itcss/_base.lists";
+@import "itcss/_base.page";
+@import "itcss/_base.tables";
+@import "itcss/_base.blockquote";
+@import "itcss/_base.forms";
+
+
+
+
+
+/*------------------------------------*\
+    #OBJECTS STYLES
+\*------------------------------------*/
+
+/**
+ * Cosmetic-free design patterns.
+ */
+
+@import "itcss/_objects.ui-list.scss";
+@import "itcss/_objects.media-object.scss";
+@import "itcss/_objects.image.scss";
+@import "itcss/_objects.container.scss";
+@import "itcss/_objects.search.scss";
+@import "itcss/_objects.nav.scss";
+
+
+
+
+
+/*------------------------------------*\
+    #COMPONENTS STYLES
+\*------------------------------------*/
+
+/**
+ * Designed components, chunks of UI.
+ */
+
+@import "itcss/_component.button.scss";
+@import "itcss/_component.heading.scss";
+@import "itcss/_component.section-block.scss";
+@import "itcss/_component.notice-block.scss";
+@import "itcss/_component.promo-block.scss";
+@import "itcss/_component.navigation-list.scss";
+@import "itcss/_component.archive-list.scss";
+@import "itcss/_component.carousel.scss";
+@import "itcss/_component.breadcrumbs.scss";
+@import "itcss/_component.logo.scss";
+@import "itcss/_component.masthead.scss";
+@import "itcss/_component.search.scss";
+@import "itcss/_component.footer.scss";
+@import "itcss/_component.related-content.scss";
+@import "itcss/_component.related-eforms.scss";
+@import "itcss/_component.related-image.scss";
+@import "itcss/_component.message.scss";
+@import "itcss/_component.atoz.scss";
+@import "itcss/_component.menu.scss";
+@import "itcss/_component.taskbar.scss";
+@import "itcss/_component.progress-indicator.scss";
+@import "itcss/_component.table.scss";
+@import "itcss/_component.meta-content.scss";
+@import "itcss/_component.alert.scss";
+@import "itcss/_component.forms.scss";
+@import "itcss/_component.highlight.scss";
+
+//TODO: Convert to ITCSS
+@import "scss/_t-navigation.scss";
+
+
+
+
+
+/*------------------------------------*\
+    #TRUMPS STYLES
+\*------------------------------------*/
+
+/**
+ * Helpers and overrides.
+ */
+
+@import "itcss/_trumps.alignments";
+@import "itcss/_trumps.spacings";
+@import "itcss/_trumps.thumbnails.scss";
+@import "itcss/_trumps.visibility.scss";
+@import "itcss/_trumps.widths.scss";
+@import "itcss/_trumps.googlesearch.scss";
+@import "itcss/_trumps.forms.scss";

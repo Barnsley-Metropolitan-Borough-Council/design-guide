@@ -1,0 +1,173 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * VISIBILITY
+ *
+ * Provides a set of common visibility options.
+ *
+ **
+ *
+ * CONTENTS
+ * TBD..................To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    display: inline-block !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.reverse {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; 
+}
+
+/*a*/.primary {
+    background-color: $color--primary;
+    color: $color--lightest;
+    display: block;
+    fill: $color--lightest;
+}
+
+/*a*/.primary:hover {
+    background-color: $color--primary-hover;
+}
+
+.primary--foreground {
+    color: $color--lightest;
+    display: block;
+    fill: $color--lightest;
+}
+
+
+
+
+/*------------------------------------*\
+    #MD AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--md) {
+
+    .md-hidden {
+        display: none !important;
+    }
+
+    .md-invisible {
+        display: inline-block !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
+
+    .md-visible {
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .md-reverse {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH"; 
+    }
+
+    /*a*/.md-primary {
+        background-color: $color--primary;
+        color: $color--lightest;
+        display: block;
+        fill: $color--lightest;
+    }
+
+    /*a*/.md-primary:hover {
+        background-color: $color--primary-hover;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LG AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+@media (min-width: $breakpoint--lg) {
+
+    .lg-hidden {
+        display: none !important;
+    }
+
+    .lg-invisible {
+        display: inline-block !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
+    
+    .lg-visible {
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .lg-reverse {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH"; 
+    }
+
+    /*a*/.lg-primary {
+        background-color: $color--primary !important;
+        color: $color--lightest !important;
+        display: block !important;
+        fill: $color--lightest !important;
+    }
+
+    /*a*/.lg-primary:hover {
+        background-color: $color--primary-hover !important;
+    }
+}
+
+@media print {
+
+    .print-hidden {
+        display: none !important;
+    }
+
+}

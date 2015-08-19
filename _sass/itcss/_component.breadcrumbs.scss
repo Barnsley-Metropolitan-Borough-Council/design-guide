@@ -1,0 +1,70 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * BREADCRUMBS
+ * 
+ * Breadcrumb component, used to provide navigation via the 
+ * document hierarchy 
+ *
+ */
+/// <reference path="../barnsley-council.scss" />
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+.breadcrumbs {
+    
+    // Default mobile styles
+    display: none;
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        display: block;
+        margin-bottom: $padding--normal;
+        padding-top: $padding--normal;
+
+    }
+}
+
+/*h1*/.breadcrumbs__heading {
+
+    // Default mobile styles
+    display: none;
+
+}
+
+/*ul*/.breadcrumbs__list {
+
+    // Default mobile styles
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*li*/.breadcrumbs__item {
+
+    // Default mobile styles
+    display: inline;
+    list-style-type: none;
+
+    &:before {
+        content: ' > ';
+    }
+
+    &:first-child:before {
+        content: none;
+    }
+
+}
+
+/*a*/.breadcrumbs__link {
+
+}

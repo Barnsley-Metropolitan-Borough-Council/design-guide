@@ -1,0 +1,64 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * SPACINGS
+ *
+ * Provides a set of common padding and margin options.
+ *
+ **
+ *
+ * CONTENTS
+ * TBD..................To be determined.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TBD
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+.soft {
+    padding: $padding--normal !important;
+    margin: 0 !important;
+}
+
+.hard {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.indented {
+
+    //  Desktop styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        padding: $padding--normal $padding--normal*4 !important;
+        margin: 0 !important;
+
+    }
+
+}
+
+.lg-indented {
+
+    //  Default mobile styles
+    padding: 0 !important;
+
+    //  Desktop styles
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        padding: $padding--normal $padding--normal*4 !important;
+        margin: 0 !important;
+
+    }
+
+}

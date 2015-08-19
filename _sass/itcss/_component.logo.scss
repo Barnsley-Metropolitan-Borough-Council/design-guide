@@ -1,0 +1,76 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * LOGO
+ * 
+ * Sets up a logo object that is effectively a H1 with its text moved over
+ * to one side and a background image placed on the container. This is used
+ * in the header and footer primarily.
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+.logo {
+
+    // Default mobile styles
+
+}
+
+.logo__heading {
+
+    // Default mobile styles
+    background-image: $image--logo;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 162px;
+    height: 40px;    
+    overflow: hidden;
+    margin: $padding--normal;    
+    width: 42px;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+
+        width: 162px;
+
+    }
+
+    @media print {
+        background-image: none;
+        height: 60px;
+        width: 243px;
+        margin: $padding--normal 0;
+    }
+
+}
+
+.logo__link {
+    
+    // Default mobile styles
+    line-height: 1000px;
+    display: block;
+
+    @media print {
+        display: none;
+    }
+
+}
+
+.logo__print {
+
+    display: none;
+
+    @media print {
+        display: inline-block;
+        height: 60px;
+        width: 243px;
+    }
+
+}

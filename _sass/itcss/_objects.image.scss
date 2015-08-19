@@ -1,0 +1,28 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * IMAGES
+ * 
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #SCAFFOLD
+\*------------------------------------*/
+
+.image {
+
+    // Default mobile styles   
+    width: 100%;    
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+   
+    }
+
+}
