@@ -51,6 +51,12 @@
 
 }
 
+.related-content__link {
+
+    text-decoration: none;
+
+}
+
 .related-content__link:hover {
 
     background-color: darken($color--lighter, $color--adjust);
