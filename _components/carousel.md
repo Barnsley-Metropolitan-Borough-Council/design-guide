@@ -2,7 +2,7 @@
 title: "Carousel"
 type: components
 scss: itcss/_component.carousel.scss
-js: src/jquery.carousel.js
+js: app/carousel.js
 usage: "Image carousel component"
 status: production
 layout: page

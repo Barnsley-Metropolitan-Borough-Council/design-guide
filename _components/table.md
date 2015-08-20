@@ -2,13 +2,19 @@
 title: "Table"
 type: components
 scss: itcss/_component.table.scss
+js: app/responsive-tables.js
 usage: "Responsive table component"
 status: production
 layout: page
 ---
 
-Table classes for responsive, collapsible tablets.
+Table classes for responsive, collapsable tables. 
 
+<div class="message message--warn">
+    <strong>Warning</strong> the Javascript will populate the data-heading attributes automatically. But whenever possible you should populate this attribute on the server side.
+</div>
+
+<div class="example">
 <table border="0" class="table table--responsive">
     <thead>
     <tr>
@@ -51,6 +57,7 @@ Table classes for responsive, collapsible tablets.
     </tr>
     </tbody>
 </table>
+</div>
 
 {% highlight html %}
 <table border="0" class="table table--responsive">

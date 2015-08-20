@@ -8,6 +8,8 @@ You should checkout the Barnsley Council SCSS files and create your own _manifes
 
 Customising your manifest file allows you to only include the CSS rules for components you intend to use reducing bloat and creating leaner, faster applications.
 
+We use [Require.js](http://requirejs.org/) to handle Javascript loading. This means you don't need to worry about execution order or dependency management. You can also automatically combine and minify only your used dependencies automatically when ready for production to minimize HTTP requests.
+
 ## Required tools
 
 - Node.js
@@ -54,4 +56,8 @@ Run `npm install` to download the required dependencies prior to building.
 
 ## Build process
 
-Run `gulp build` to compile your css and javascript.
+Run `gulp build` to compile your Sass to CSS.
+
+Run `node r.js -o build.js` to compile your Javascript dependencies.
+
+These can be defined as pre-build steps in your project.
