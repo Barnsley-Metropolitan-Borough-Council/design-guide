@@ -39,15 +39,10 @@
 
             updateStickyElement: function (element, settings, elementHeight, initialOffset) {
 
-                console.log(elementHeight);
-                console.log(initialOffset);
-
                 if (window.matchMedia(settings.matchMedia).matches === false) {
                     $(element).css({ 'position': 'static', 'top': '0px', 'width': $(element).parent().width() + 'px' });
                     return false;
                 }
-
-                console.log("updating")
 
                 var maxScrollHeight = $(settings.container).height(),
                     scrollY = $(document).scrollTop(),

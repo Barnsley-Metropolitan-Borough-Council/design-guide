@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * SOCIAL MEDIA
+ * 
+ * To be determined.
+ *
+ */
+
+.social-media {
+	width: 100%;
+}
+
+.social-media__link {
+
+	display: block;
+	text-align: center;
+	padding: $padding--normal*2;
+	color: $color--lightest;
+	text-decoration: none;
+	font-weight: 600;
+
+	@media screen and (min-width: $breakpoint--tablet) {
+
+		display: inline-block;
+		width: 50%;
+
+	}
+	
+}
+
+.social-media__link--facebook {
+
+	background-color: #3B5999;
+
+	&:hover {
+		background-color: darken(#3B5999, 10%);
+	}
+
+}
+
+.social-media__link--twitter {
+
+	background-color: #28AAE1;
+
+	&:hover {
+		background-color: darken(#28AAE1, 10%);
+	}
+
+}

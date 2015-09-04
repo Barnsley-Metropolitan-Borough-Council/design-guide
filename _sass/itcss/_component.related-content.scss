@@ -62,3 +62,9 @@
     background-color: darken($color--lighter, $color--adjust);
 
 }
+
+.related-content__link:focus {
+
+    color: $color--lightest;
+
+}

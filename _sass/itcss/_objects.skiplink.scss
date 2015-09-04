@@ -2,7 +2,7 @@
 /// <reference path="../barnsley-council.scss" />
 
 /**
- * SEARCH
+ * SKIPLINK
  * 
  * Covers the search field and button that triggers it. This component is used
  * in a couple of different places, including the header
@@ -18,34 +18,15 @@
     #SCAFFOLD
 \*------------------------------------*/
 
-.ui-search__field {
+.skiplink {
 
-    // Default mobile styles
-    padding: $padding--normal;
-
-}
-
-.ui-search__label {
-
-    // Default mobile styles
     position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
+    left:-999em;
 
 }
 
+.skiplink:focus {
 
+    position:static;
 
-
-
-/*------------------------------------*\
-    #BLOCK STYLES
-\*------------------------------------*/
-
-
-
-
-
+}

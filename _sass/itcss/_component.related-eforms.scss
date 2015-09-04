@@ -53,3 +53,9 @@
 .related-eforms__link:hover {
     background-color: darken($color--lighter, $color--adjust);
 }
+
+.related-eforms__link:focus {
+
+    color: $color--lightest;
+
+}

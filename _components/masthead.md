@@ -161,4 +161,84 @@ The masthead is the common header bar amongst all Barnsley Council skinned appli
 
 ## Transactional masthead
 
-To be confirmed.
+A slim, link-free header for use on transactional applications.
+
+<div class="example">
+<header role="banner">
+    <div class="container container--screen ">
+        <div class="masthead container--float">
+            <div class="logo masthead__logo">
+                <h1 class="logo__heading">
+                    <a class="logo__link">
+                        Barnsley Council
+                    </a>                
+                </h1>
+            </div>            
+            <p class="masthead__strapline">
+                Working together for a brighter future, a better Barnsley
+            </p>
+        </div>
+    </div>        
+</header>
+</div>
+
+{% highlight html %}
+<header role="banner">
+    <div class="container container--screen ">
+        <div class="masthead container--float">
+            <div class="logo masthead__logo">
+                <h1 class="logo__heading">
+                    <a class="logo__link">
+                        Barnsley Council
+                    </a>                
+                </h1>
+            </div>            
+            <p class="masthead__strapline">
+                Working together for a brighter future, a better Barnsley
+            </p>
+        </div>
+    </div>        
+</header>
+{% endhighlight %}
+
+## Competitive
+
+<div class="example">
+<header role="banner">
+    <div class="container container--screen">
+        <div class="masthead masthead--competitive container--float">
+            <div class="logo masthead__logo masthead__logo--competitive">
+                <h1 class="logo__heading">
+                    <a class="logo__link">
+                        Barnsley Council Traded Services
+                    </a>
+                </h1>
+            </div>
+            <p class="masthead__strapline">
+                Call us today on <em>01226 000 000</em>
+            </p>
+        </div>
+    </div>
+</header>
+</div>
+
+## Traded Service
+
+<div class="example">
+<header role="banner">
+    <div class="container container--screen">
+        <div class="masthead masthead--traded container--float">
+            <div class="logo masthead__logo masthead__logo--traded">
+                <h1 class="logo__heading">
+                    <a class="logo__link">
+                        Barnsley Council Traded Services
+                    </a>
+                </h1>
+            </div>
+            <p class="masthead__strapline">
+                Call us today on <em>01226 000 000</em>
+            </p>
+        </div>
+    </div>
+</header>
+</div>

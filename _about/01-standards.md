@@ -29,4 +29,21 @@ We are legally and morally obligated to ensure our applications comply with [WCA
 
 Consider how people using phones, screen readers and search engines will access and use the site.
 
+# Mobile first
+
+Our sites and web applications should be designed with mobile first in mind, doing this will enable us to provide a usable, focused baseline for our applications, and provide compatibility with future devices.
+
+# Responsive design
+
+| Breakpoint        | Screen Size       |
+| -----             | -----             |
+| Mobile            | Less than 768px           |
+| Tablet            | Less than 1140px          |
+| Desktop           | Greater than or equal to 1140px         |
+
+# Print friendly
+
+Where information is being provided either as an informative content article, or an application confirmation such as payment receipt, a print friendly version of the content should be provided.
+
+
 

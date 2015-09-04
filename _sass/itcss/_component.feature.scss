@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * FEATURE
+ * 
+ * To be determined.
+ *
+ */
+
+.feature {
+	padding: $padding--normal;
+}
+
+.feature__list {
+
+	//	default mobile layout
+	display: block;
+
+	//	tablet and higher
+	@media screen and (min-width: $breakpoint--tablet) {
+		display: table;
+		width: 100%;
+		table-layout:fixed;
+	}
+
+}
+
+.feature__list--bordered {
+	
+	.feature__item {
+
+		border-bottom: 1px solid $color--lighter;
+
+		@media screen and (min-width: $breakpoint--tablet) {
+			border-bottom: 0;
+			border-right: 1px solid $color--lighter;
+		}
+	}
+
+	.feature__item:last-child {
+
+		border: 0;
+
+	}
+
+}
+
+.feature__item {
+
+	//	default mobile layout
+	display: block;
+
+	//	tablet and higher
+	@media screen and (min-width: $breakpoint--tablet) {
+		display: table-cell;
+		width: 5%;	
+	}
+}
+
+.feature__heading {
+	color: $color--primary;
+	margin: 0;
+}
+
+.feature__content {
+
+}
+
+.feature__link {
+	color: $color--primary;
+}
+
+.feature--soft {
+	padding: $padding--normal*1.5;
+}
+
+.feature--supersoft {
+	padding: $padding--normal*2;
+}
+
+.feature--photo {
+
+	background: no-repeat center;
+	background-size: cover;
+
+	.feature__content {
+
+		display: block;
+
+		@media screen and (min-width: $breakpoint--tablet) {
+
+			width: 50%;
+
+		}
+
+		@media screen and (min-width: $breakpoint--desktop) {
+
+			width: 33%;
+
+		}
+
+	}
+
+
+	.feature__link {
+
+		text-transform: uppercase;
+
+	}
+
+}
+
+.feature--inverted {
+
+	.feature__heading {
+		color: $color--lightest;
+	}
+
+	.feature__link {
+		color: $color--lightest;
+	}
+
+	color: $color--lightest;
+
+}

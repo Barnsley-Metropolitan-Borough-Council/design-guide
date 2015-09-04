@@ -9,7 +9,13 @@ layout: page
 
 ## Guidelines
 
-Accessible, dont require javascript, client and server side validation
+Forms must work equally well with or without Javascript enabled. 
+
+It's strongly preferred realtime client validation provides realtime, inline, feedback in addition to mandatory server side validation.
+
+Forms should implement the [forgiving format](http://ui-patterns.com/patterns/ForgivingFormat) design pattern; for example - when asking a user for a quantity of items this should be a `number` input with the `min` and `max` set using HTML5 elements as well as providing forgiving server side validation.
+
+When using forgiving format on more complicated data such as dates or currency entry the users input should be confirmed back to them following interpetation by the server, for example if a user enters 03-05-2018 we should confirm back the input as 3rd May 2018 before the transaction is completed.
 
 ## Elements
 
@@ -185,7 +191,9 @@ Textareas should not be wider than 80 characters long
 
 ### Select
 
-Make sure select inputs are labelled, the default entry should not be a selection queue eg 'Please select'
+Make sure select inputs are labelled, the default entry should not be a selection queue eg 'Please select'.
+
+You should use a select when you have 4 or more options, alternatively use radio buttons for a single selection or checkboxes for multiple selection.
 
 <div class="example">
 <div>
@@ -263,7 +271,7 @@ For these to work the `input` element must be directly before to the `label` ele
 
 ### Radio
 
-Used whenever you want to provide short list of options with a single preference.
+Used whenever you want to provide 3 or fewer options with a single preference.
 
 #### Standard radio buttons
 

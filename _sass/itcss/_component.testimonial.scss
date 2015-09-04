@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * TESTIMONIAL
+ * 
+ * To be determined.
+ *
+ */
+
+.testimonial {
+	background-color: $color--primary;
+	padding: $padding--normal*2;
+	text-align: center;
+	color: $color--lightest;
+}
+
+.testimonial__heading {
+	margin: $padding--normal;
+}
+
+.testimonial__list {
+
+}
+
+.testimonial__item {
+
+}
+
+.testimonial__item--active {
+
+	display: block;
+
+}
+
+.testimonial__item--hidden {
+
+	display: none;
+
+}
+
+.testimonial__quote {
+
+	display: block;
+	font-style: normal;
+
+	&:before {
+		content: "";
+	}
+
+	&:after {
+		content: "";
+	}
+
+}
+
+.testimonial__text {
+
+	margin: $padding--normal*2 0;
+	font-size: $font__size--normal * 1.5;
+
+	&:before {
+		content: "\"";
+	}
+
+	&:after {
+		content: "\"";
+	}
+
+}
+
+.testimonial__author {
+
+	display: block;
+	font-style: normal;
+	text-transform: uppercase;	
+	font-size: $font__size--normal*0.8;
+	font-weight: $font__weight--bold;
+	margin-top: $padding--normal*-1;
+
+}
+
+.testimonial__nav {
+
+	margin: $padding--normal*2 0 0;
+
+}
+
+.testimonial__nav__item:hover {
+	cursor: pointer;
+}
+
+.testimonial__nav__item {
+	display: inline-block;
+	margin:$padding--half;
+	width:16px;
+	height: 16px;
+	border-radius: 8px;
+	border: 3px solid $color--lightest;
+	background-color: $color--lightest;
+	overflow: hidden;
+	text-indent:-10em;
+
+}
+
+.testimonial__nav__item--active {
+	background-color: transparent;
+}
+
+.testimonial--coloured {
+
+	background-color: transparent;
+
+	.testimonial__heading {
+		color: $color--primary;
+	}
+
+	.testimonial__author {
+		color: $color--darkest;
+	}
+
+	.testimonial__text {
+		color: $color--light;
+	}
+
+	.testimonial__nav__item {
+		background-color: $color--light;
+		border-color: $color--light;
+	}
+
+	.testimonial__nav__item--active  {
+		background-color: $color--primary;
+		border-color: $color--light;
+	}
+
+
+}

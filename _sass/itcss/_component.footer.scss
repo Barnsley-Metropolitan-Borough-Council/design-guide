@@ -40,7 +40,15 @@
         page-break-before:avoid;
 
     }
-    
+ 
+    &--traded {
+
+        // Default mobile styles
+        text-align: center;
+
+
+    }
+
 }
 
 
@@ -89,6 +97,20 @@
 }
 
 
+.footer--traded p {
+
+
+    // Desktop and up styles
+    @media screen and (min-width: $breakpoint--desktop) {
+    
+        display: block;
+        float: none;
+        margin-top: $padding--normal;
+
+    }
+
+}
+
 
 
 
@@ -113,6 +135,15 @@
     @media print {
         
         display: none;
+
+    }
+
+
+    &--traded {
+        
+        // default mobile styles
+        display: block;    
+        margin-top: 0;  
 
     }
 

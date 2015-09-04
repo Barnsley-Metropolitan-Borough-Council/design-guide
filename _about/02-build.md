@@ -1,8 +1,18 @@
 ---
-title: "Build process"
+title: "Build"
 type: about
 layout: page
 ---
+
+## Project Structure
+
+* SASS
+* ITCSS
+* Responsive Design
+* Javascript
+* Require.JS
+
+## Developer Build Guide
 
 You should checkout the Barnsley Council SCSS files and create your own _manifest.scss in your project. 
 
@@ -10,7 +20,7 @@ Customising your manifest file allows you to only include the CSS rules for comp
 
 We use [Require.js](http://requirejs.org/) to handle Javascript loading. This means you don't need to worry about execution order or dependency management. You can also automatically combine and minify only your used dependencies automatically when ready for production to minimize HTTP requests.
 
-## Required tools
+### Required tools
 
 - Node.js
 - Gulp
@@ -21,7 +31,7 @@ We use [Require.js](http://requirejs.org/) to handle Javascript loading. This me
     + del
 - sass
 
-## Barebones installation
+### Barebones installation
 
 <div class="message message--info">
     <strong>Pro-tip</strong>
@@ -50,11 +60,11 @@ $ npm install gulp-sass gul-minify-css gulp-rename gulp-autoprefixer del --save-
 
 Then create a `gulpfile.js` and configure it as needed.
 
-## Download the dependencies
+### Download the dependencies
 
 Run `npm install` to download the required dependencies prior to building.
 
-## Build process
+### Build process
 
 Run `gulp build` to compile your Sass to CSS.
 

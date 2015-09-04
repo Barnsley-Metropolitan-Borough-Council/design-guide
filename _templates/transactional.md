@@ -49,7 +49,6 @@ The transactional template is a minimal, tunnelled template aimed at guiding the
 </div>
 
 {% highlight html %}
-<div class="example">
 <header role="banner">
     <div class="container container--screen ">
         <div class="masthead container--float">

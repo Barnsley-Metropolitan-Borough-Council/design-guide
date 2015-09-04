@@ -33,16 +33,12 @@
                     }
                 }
 
-                console.log($(e).data('original-src'));
-
                 smartResize = _.debounce(function (event) { self.updateImage(e); }, 300);
                 $(window).resize(smartResize);
                 self.updateImage(e);
 
             },
             updateImage: function (e) {
-
-                console.log($(e).data('original-src'));
 
                 var imgPath = $(e).data('original-src').split("?")[0],
                     imgRawProperties = $(e).data('original-src').split("?")[1].split("&"),

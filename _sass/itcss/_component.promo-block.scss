@@ -42,6 +42,13 @@
 
 /*a*/.promo-block__link {
     color: $color--darkest;
+    text-decoration: none;
+    display:block;
+}
+
+/*a*/.promo-block__link:focus {
+    color: $color--lighterest;
+    background-color: $color--focus;
 }
 
 /*li*/.promo-block__item:hover {

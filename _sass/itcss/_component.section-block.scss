@@ -30,7 +30,9 @@
 }
 
 /*a*/.section-list__link {
+    display: block;
     color: $color--darkest;
+    text-decoration: none;
 }
 
 /*div*/.section-list__media-item {

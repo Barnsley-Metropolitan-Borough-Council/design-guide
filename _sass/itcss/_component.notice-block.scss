@@ -31,7 +31,13 @@
 
 /*a*/.notice-block__link {
     color: $color--darkest;
+    display:block;
     text-decoration: none;
+}
+
+/*a*/.notice-block__link:focus {
+    background-color: $color--focus;
+    color: $color--lighterest;
 }
 
 /*li*/.notice-block__item:hover {

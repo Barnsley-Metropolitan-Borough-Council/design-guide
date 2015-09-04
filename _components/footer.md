@@ -11,6 +11,7 @@ layout: page
 
 Footer for use in the corporate layout.
 
+<div class="example">
 <footer>
     <div class="container container--fill">
         <div class="footer">
@@ -38,6 +39,7 @@ Footer for use in the corporate layout.
         </div>
     </div>
 </footer>
+</div>
 
 {% highlight html %}
 <footer>
@@ -68,3 +70,28 @@ Footer for use in the corporate layout.
     </div>
 </footer>
 {% endhighlight %}
+
+## Traded service footer
+
+<div class="example">
+<footer>
+    <div class="container container--fill">
+        <div class="footer footer--traded">        
+            <nav class="footer__menu footer__menu--traded">
+                <ul class="ui-list">
+                    <li class="footer__menu__item">
+                        <a class="footer__menu__link" href="#top">#top</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a class="footer__menu__link" href="http://gov.uk" target="_blank">GOV.UK</a>
+                    </li>
+                    <li class="footer__menu__item">
+                        <a class="footer__menu__link" href="/disclaimer" accesskey="8">Disclaimer</a>
+                    </li>                    
+                </ul>
+            </nav>
+            <p role="contentinfo">© 2015 Barnsley Metropolitan Borough Council. All rights reserved</p>
+        </div>
+    </div>
+</footer>
+</div>
