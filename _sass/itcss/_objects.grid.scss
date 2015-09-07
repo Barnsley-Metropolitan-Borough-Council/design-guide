@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * GRID
+ * 
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+	#SCAFFOLD
+\*------------------------------------*/
+
+/*div*/.grid {
+
+}
+
+/*div*/.grid__section {
+
+}
+
+/*div*/.grid__row {
+
+	clear: both;
+	vertical-align: top;
+
+}
+
+/*div*/.grid__column {
+
+	display: block;
+	vertical-align: top;
+	
+	@media screen and (min-width: $breakpoint--tablet) {
+
+		display: inline-block;
+
+	}
+
+}
+
+@for $i from 1 to 13
+{
+
+	.grid__column--#{$i}
+	{
+
+		@media screen and (min-width: $breakpoint--tablet) {
+
+			width: ($i / 6) * 100%;
+
+		}
+
+
+		@media screen and (min-width: $breakpoint--desktop) {
+
+			width: ($i / 12) * 100%;
+
+		}
+
+	}
+
+}
