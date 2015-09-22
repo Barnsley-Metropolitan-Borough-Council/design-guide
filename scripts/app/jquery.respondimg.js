@@ -28,10 +28,10 @@
                 if ($(e).is('img')) {
                     $(e).data('original-src', $(e).prop('src'));
                 } else {
-                    if ($(e).data('original-src').length == 0) {
+                    if (typeof $(e).data('original-src') !== 'undefined' && $(e).data('original-src').length == 0) {
                         $(e).data('original-src', $(e).css('background-image').substr(4, $(e).css('background-image').length - 5));
                     }
-                }
+                }                
 
                 smartResize = _.debounce(function (event) { self.updateImage(e); }, 300);
                 $(window).resize(smartResize);
@@ -39,6 +39,10 @@
 
             },
             updateImage: function (e) {
+
+                if (typeof $(e).data('original-src') === 'undefined' || $(e).data('original-src').indexOf("?") == -1) {
+                    return;
+                }
 
                 var imgPath = $(e).data('original-src').split("?")[0],
                     imgRawProperties = $(e).data('original-src').split("?")[1].split("&"),

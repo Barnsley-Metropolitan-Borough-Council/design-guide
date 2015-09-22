@@ -1,8 +1,8 @@
 ---
-title: "Cart"
+title: "Basket"
 type: components
-scss: itcss/_component.cart.scss
-usage: "Shopping cart"
+scss: itcss/_component.basket.scss
+usage: "Shopping basket"
 status: suggestion
 layout: page
 ---

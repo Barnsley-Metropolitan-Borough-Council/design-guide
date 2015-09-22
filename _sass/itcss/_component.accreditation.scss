@@ -16,7 +16,7 @@
 
 	// tablet styles
 	@media screen and (min-width: $breakpoint--tablet) {
-		padding: $padding--normal * 2;
+		padding: $padding--normal * 4 $padding--normal * 2;
 	}
 
 }
@@ -65,5 +65,16 @@
 /*img*/.accreditation__image {
 
 	// default mobile styles
+	max-height: 30%;
+
+    // tablet styles
+	@media screen and (min-width: $breakpoint--tablet) {
+		max-height: 40%;
+	}
+
+    // tablet styles
+	@media screen and (min-width: $breakpoint--desktop) {
+		max-height: 50%;
+	}
 
 }

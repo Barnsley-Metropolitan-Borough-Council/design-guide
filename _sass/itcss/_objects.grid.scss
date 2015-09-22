@@ -17,6 +17,24 @@
 
 /*div*/.grid {
 
+    background-color: $color--lightest;
+
+}
+
+/*div*/.grid--fill {
+
+	@media screen and (min-width: $breakpoint--desktop) {
+		
+		& .grid__row {
+			width: 100%;
+			display: table;
+		}
+
+		& .grid__column {
+			display: table-cell;
+		}
+	
+	}
 }
 
 /*div*/.grid__section {
@@ -30,12 +48,31 @@
 
 }
 
+/*div*/.grid__row--bordered .grid__column+.grid__column {
+
+    border-top: 1px solid $color--lighter;
+
+    @media screen and (min-width: $breakpoint--desktop) {
+
+        border-top: 0;
+	    border-left: 1px solid $color--lighter;		
+
+    }
+
+}
+
+.grid__row--ruled {
+    
+    border-top: $padding--half solid $color--primary;
+
+}
+
 /*div*/.grid__column {
 
 	display: block;
 	vertical-align: top;
 	
-	@media screen and (min-width: $breakpoint--tablet) {
+	@media screen and (min-width: $breakpoint--desktop) {
 
 		display: inline-block;
 
@@ -49,12 +86,7 @@
 	.grid__column--#{$i}
 	{
 
-		@media screen and (min-width: $breakpoint--tablet) {
-
-			width: ($i / 6) * 100%;
-
-		}
-
+		width: 100%;
 
 		@media screen and (min-width: $breakpoint--desktop) {
 

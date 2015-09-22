@@ -26,3 +26,8 @@
     display: block;
     padding: 0.5rem 0
 }
+.nav--divided li+li {
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    border-left: 1px solid $color--middle;
+}

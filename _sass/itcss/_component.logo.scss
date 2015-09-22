@@ -51,6 +51,20 @@
 
 }
 
+.logo__heading--traded {
+
+    // Default mobile styles
+    margin-bottom: $padding--half;
+
+}
+
+.logo__heading--inverted {
+
+    // Default mobile styles
+    background-image: $image--logo--inverted;
+
+}
+
 .logo__link {
     
     // Default mobile styles
@@ -65,6 +79,7 @@
 
 .logo__link:focus {
 
+    // Default mobile styles
     display: block;
     background-color: transparent;
 
@@ -72,6 +87,7 @@
 
 .logo__print {
 
+    // Default mobile styles
     display: none;
 
     @media print {
@@ -79,5 +95,16 @@
         height: 60px;
         width: 243px;
     }
+
+}
+
+.logo__subheading {
+
+    // Default mobile styles
+    text-transform: uppercase;
+    color: purple;
+    margin: 0;
+    font-size: 1rem;
+    padding-left: 1rem;
 
 }

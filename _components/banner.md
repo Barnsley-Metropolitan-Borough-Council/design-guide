@@ -16,12 +16,10 @@ layout: page
 </div>
 
 {% highlight html %}
-<div class="banner">
-    <p class="banner__text" style="background-image: url('//placehold.it/500x300');">
-        Barnsley HR Services provide expert HR support to help schools,
-        business and partner organisations manage their employees to protect 
-        them from expensive employment litigation
-    </p>
+<div class="banner" style="background-image: url('//placehold.it/500x300');">
+    <h1 class="banner__text">
+        Barnsley HR Services provide expert HR support to help schools, business and partner organisations manage their employees to protect them from expensive employment litigation
+    </h1>
 </div>
 {% endhighlight %}
 

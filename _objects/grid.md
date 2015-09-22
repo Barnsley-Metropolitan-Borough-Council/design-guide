@@ -181,3 +181,34 @@ You are able to nest grids within grids.
     </div>
 </div>
 {% endhighlight %}
+
+## Filled grids
+
+If you want the grid cells to fill the maximum vertical height of their cells assign the `grid--fill` class to the grid element.
+
+<div class="example">
+<div class="grid grid--fill">
+    <div class="grid__section">        
+        <div class="grid__row">
+            <div class="grid__column grid__column--6">
+                <div class="grid__row">
+                    <div class="grid__column grid__column--6">
+                        grid__column--6
+                    </div><!--
+                --><div class="grid__column grid__column--6">
+                        grid__column--6
+                    </div>
+                </div>
+            </div><!--
+         --><div class="grid__column grid__column--6">
+                grid__column--6
+            </div>
+        </div>
+        <div class="grid__row">
+            <div class="grid__column grid__column--12">
+                grid__column--12
+            </div>
+        </div>
+    </div>
+</div>
+</div>

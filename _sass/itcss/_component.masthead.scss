@@ -294,3 +294,20 @@
     max-height:100px;
 
 }
+
+
+.masthead__info {
+
+    padding: $padding--half;
+    float: right;
+    text-align: right;
+    line-height: $padding--normal*1.5;
+
+}
+
+.masthead__info--traded {
+
+    margin-top: $padding--normal;
+    line-height: $padding--normal*2;
+
+}
