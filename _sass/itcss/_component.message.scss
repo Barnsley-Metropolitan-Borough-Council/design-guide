@@ -65,8 +65,9 @@
 *
 \***********************/
 
-
-.message--notice {
+// the single hyphen varient used for conditional comment notices
+// to avoid breaking HTML validation
+.message--notice, .message-notice {
 
     background-color: $color--darkestest;
     color: $color--lightest;

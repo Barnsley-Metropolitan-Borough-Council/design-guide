@@ -101,6 +101,9 @@
 }
 
 
+
+
+
 /*------------------------------------*\
     #TITLE CONTAINER STYLES
 \*------------------------------------*/
@@ -227,4 +230,18 @@
     left: 0; 
     width: 100%; 
     height: 100%;
+}
+
+
+/*------------------------------------*\
+    #LANDING CONTAINER STYLES
+\*------------------------------------*/
+
+.container--landing {
+    background-color: $color--background;
+}
+
+.container--landing-page {
+    background-color: $color--lightest;
+    padding: $padding--normal * 2;
 }

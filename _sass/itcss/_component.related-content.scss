@@ -20,6 +20,8 @@
 .related-content {
 
     // Print styles
+    background-color: $color--lighter;
+
     @media print {
 
         display:none;

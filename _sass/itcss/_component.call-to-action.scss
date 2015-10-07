@@ -21,15 +21,26 @@
 
 .call-to-action__heading {
 	margin: 0;
-	padding: $padding--normal;
-	text-transform: uppercase;
+	padding: $padding--normal;	
 	color: $color--lightest;
 	font-size: $font__size--normal*1.33;
 }
 
-.call-to-action__icon {
+.call-to-action__media {
 	margin: $padding--half;
 	vertical-align: middle;
+}
+
+.call-to-action__icon {    
+    max-height:125px;
+    fill: $color--primary;
+}
+
+.call-to-action__icon--secondary {
+    max-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    display:inline-block;
 }
 
 .call-to-action__primary {
@@ -37,6 +48,7 @@
 	font-size: $font__size--normal*2;
 	font-style: normal;
 	font-weight: $font__weight--bold;
+    text-decoration: none;
 }
 
 .call-to-action__content {
@@ -48,7 +60,7 @@
 }
 
 .call-to-action__secondary {
-
+    text-decoration: none;
 }
 
 .call-to-action__footer {

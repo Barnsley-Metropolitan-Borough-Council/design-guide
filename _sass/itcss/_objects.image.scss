@@ -19,7 +19,8 @@
 
     // Default mobile styles   
     width: 100%;    
-
+	display: block;
+	
     // Desktop and up styles
     @media screen and (min-width: $breakpoint--desktop) {
    

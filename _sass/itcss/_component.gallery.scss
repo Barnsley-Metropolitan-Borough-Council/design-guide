@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+
+/**
+ *
+ * GALLERY
+ * 
+ * Image gallery components and styles
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #TBD
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+.gallery {
+
+	// default mobile styles
+	text-align:center;
+
+	// tablet styles
+	@media screen and (min-width: $breakpoint--tablet)
+	{
+		
+	}
+
+	// desktop styles
+	@media screen and (min-width: $breakpoint--desktop)
+	{
+
+	}
+
+}
+
+.gallery__active {	
+
+}
+
+.gallery__active__link {
+
+	display: block;
+
+}
+
+.gallery__active__image {
+
+	border: 1px solid $color--lighter;
+	background-color: $color--lightest;
+	padding: 2px;
+
+}
+
+.gallery__nav {	
+
+    margin-bottom: $padding--normal;
+
+}
+
+.gallery__list {
+
+	display: inline-block;
+
+}
+
+.gallery__item {
+
+	// default mobile styles
+	display: inline-block;
+	width: 3rem;	
+	height: 3rem;
+	margin: $padding--half*0.5;
+	border: 1px solid $color--lighter;
+	background-color: $color--lightest;
+	padding: 2px;
+
+}
+
+.gallery__item--active {
+	border: 1px solid $color--primary;
+	background-color: $color--lightest;
+	padding: 2px;
+}
+
+.gallery__link {
+
+	// default mobile styles
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+
+}
+
+.gallery__link:hover {
+	
+	opacity:0.5;
+
+}
+
+.gallery__link--active {
+
+	// default mobile styles
+
+}
+
+.gallery__image {
+
+}
+
+.gallery__image--active {
+
+}

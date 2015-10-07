@@ -50,24 +50,27 @@
             padding-bottom: .5em;
         }
 
-        &:before {
-            content: attr(data-heading);
-            font-weight: $font__weight--bold;
-            display: inline-block;
-            width: 40%;
-            vertical-align: top;
-     
-            @media (min-width: $breakpoint--tablet) {
-            display: none;
-            }
-        }
-
     }
 
     @media screen and (min-width: $breakpoint--tablet) {
         display: table-cell;
     }
 
+}
+
+.table--responsive td:before {
+
+    // Default mobile styles
+    content: attr(data-heading);
+    font-weight: $font__weight--bold;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+     
+    // Tablet and up styles
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: none !important;
+    }
 }
 
 .table--responsive td div {

@@ -18,6 +18,13 @@ We should only ask for personal details when customers need access to their priv
 
 When presenting forms to customers the most important information should be the first questions we ask. For example; When reporting graffiti the first information the customer should be asked for is the location of the graffiti. 
 
+When the customer is filling in an e-form we should collect information in the following order:
+
+ - Incident details
+ - Personal details
+ - Payment details
+
+
 ### Fewer fields
 
 Capture only the data you need, every additional form field increases the likelyhood of a customer abandoning the transaction. 
