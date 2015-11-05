@@ -72,6 +72,9 @@ define(['jquery', 'jquerym'], function ($) {
                         if ((this.length > 0) && (this.indexOf('/') != -1)) {
                             drawers++;
                             self.showMenu(this, drawers);
+                            if (typeof ga !== 'undefined' && url.split(';').length == drawers) {
+                                ga('send', 'pageview', this);
+                            }
                         }
                     });
                 }
@@ -131,6 +134,9 @@ define(['jquery', 'jquerym'], function ($) {
                         // Hide the progress indicator
                         $(".menu .progress-container").hide();
                         $(".menu .menu__content--is-loading").removeClass("menu__content--is-loading");
+
+                        menuContent.find('a').first().focus();
+                        menuButton.scrollTop();
 
                     });
                 }

@@ -40,7 +40,7 @@
 	// default mobile styles
 	font-size: $font__size--normal*1.5;
 	font-weight: $font__weight--bold;
-	color: $color--primary;
+	color: $color--lightest;
 	text-align: center;		
 	padding: $padding--normal*2.5 $padding--normal*1.5;
 	margin: 0;
@@ -50,6 +50,7 @@
 	@media screen and (min-width: $breakpoint--tablet) {
 		font-size: $font__size--normal*2;
 		position: absolute;
+		color: $color--primary;
 		top:auto;
 		bottom: 0;
 		left: 0;
@@ -66,7 +67,7 @@
 
 .banner--stripe {
 
-	&:before {
+	&:before {		
 
 		// Tablet and up styles
 		@media screen and (min-width: $breakpoint--tablet) {

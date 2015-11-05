@@ -17,24 +17,31 @@
 
 /*div*/.grid {
 
-    background-color: $color--lightest;
-
 }
 
 /*div*/.grid--fill {
 
-	@media screen and (min-width: $breakpoint--desktop) {
-		
-		& .grid__row {
+	& .grid__row {
+
+		// Default mobile styles
+		display: block;
+
+		@media screen and (min-width: $breakpoint--desktop) {
 			width: 100%;
 			display: table;
 		}
+	}
 
-		& .grid__column {
+	& .grid__column {
+		
+		// Default mobile styles
+		display: block;
+
+		@media screen and (min-width: $breakpoint--desktop) {
 			display: table-cell;
 		}
-	
 	}
+	
 }
 
 /*div*/.grid__section {
@@ -43,6 +50,7 @@
 
 /*div*/.grid__row {
 
+	// Default mobile styles
 	clear: both;
 	vertical-align: top;
 
@@ -69,6 +77,7 @@
 
 /*div*/.grid__column {
 
+	// Default mobile styles
 	display: block;
 	vertical-align: top;
 	

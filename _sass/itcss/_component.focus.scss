@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * BASKET
+ * 
+ * To be determined.
+ *
+ */
+
+ .focus {
+ 	
+ 	margin: 0 auto;
+ 	max-width: $breakpoint--tablet; 	
+ 	padding: $padding--normal*1.5;
+ 	text-align: center;
+ 	background-color: $color--page;
+ 	border: 2px solid $color--lighter;
+
+ 	@media screen and (min-width: $breakpoint--tablet)
+ 	{
+
+ 	}
+
+ }
+
+ .focus__container {
+
+ 	padding: $padding--normal;
+ 	margin: $padding--normal 0;
+ 	background-color: $color--lighterest;
+
+ 	@media screen and (min-width: $breakpoint--tablet)
+ 	{
+ 		padding: $padding--normal*2 $padding--normal;	
+ 	}
+
+ }
+
+ .focus__heading {
+
+ 	font-size: $font__size--normal * 1.5;
+ 	margin: 0;
+ 	margin-bottom: $padding--normal;
+
+ }
+
+ .focus__body {
+
+ }
+
+ .focus__footer {
+
+ }
+
+ .focus__input {
+ 	font-size: $font__size--normal * 1.5;
+ 	text-align: center;
+ }
+
+ .focus__alternative {
+
+ 	margin: $padding--normal*-1.5;
+ 	background-color: lighten($color--lighterest, 5%);
+ 	margin-top: $padding--normal; 	
+ 	border-top: 1px solid $color--lighter;
+
+ }
+
+ .focus__option {
+ 	display: table-row;
+ }
+
+ .focus__option__item+.focus__option__item {
+ 	border-top:2px solid $color--lighter;
+ }
+
+ .focus__option__text {
+ 	text-align:left;
+ 	width:70%;
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	padding: $padding--normal;
+ }
+
+ .focus__option__actions {
+ 	text-align: right;
+ 	width:30%; 	
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	padding: $padding--normal;
+ }
+
+ .focus__keyword {
+
+ }
+
+ .focus__large {
+ 	font-size: $font__size--normal*3;
+ 	display:block;
+ 	padding: $padding--half;
+ }

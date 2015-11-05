@@ -25,6 +25,7 @@
 
     border: none;
     padding: $padding--normal*1.5;
+    text-decoration: none;
 
 }
 
@@ -39,6 +40,7 @@
     margin: 0;
     padding: $padding--normal;
     text-align: center;
+    color: $color--text;
 
 }
 
@@ -52,6 +54,7 @@
     border: 0;
     font-size: $font__size--normal*0.9;
     text-decoration: underline;
+    color: $color--middle;
 
 }
 
@@ -69,6 +72,7 @@
 .button--main {
     
     padding: $padding--normal $padding--normal*2.5;
+    font-weight: $font__weight--bold;
 
 }
 
