@@ -156,8 +156,6 @@
 
 .container--content-complementary {
 
-
-
     // Desktop and up styles
     @media screen and (min-width: $breakpoint--desktop) {
     
@@ -230,7 +228,6 @@
     position: absolute; 
     top: 0; 
     left: 0; 
-    border: 0;
     width: 100%; 
     height: 100%;
 }
@@ -247,96 +244,4 @@
 .container--landing-page {
     background-color: $color--lightest;
     padding: $padding--normal * 2;
-}
-
-.container--grid-content {
-
-    padding: 1rem;
-
-    *:first-child {
-        margin-top: 0rem;
-    }
-
-    *:last-child {
-        margin-bottom: 0rem;
-    }
-
-    @media screen and (min-width: $breakpoint--tablet) {
-        padding: 0 0 1rem 0;
-    }
-
-}
-
-.container--seperated {
-
-    & > div {
-        margin-bottom: $padding--half;
-    }
-
-}
-
-
-/*------------------------------------*\
-    #APPLICATION CONTAINER STYLES
-\*------------------------------------*/
-
-
-.container--title {
-    
-    background-color: $color--primary;
-    color: white;
-    margin: -1rem;
-    padding: 1rem 2rem;
-    float: none;
-
-    @media screen and (min-width: $breakpoint--tablet) {        
-        float: left;        
-        margin: auto;
-        padding: auto;
-        color: $color--text;
-        background-color: transparent;
-    }
-
-}
-
-.container--title h1 {
-    @media screen and (max-width: $breakpoint--tablet) {
-        font-size: 1.5rem;   
-    }
-}
-
-.container--actions {
-    
-    margin-top: 1.5rem;
-
-    @media screen and (min-width: $breakpoint--tablet) {    
-        float: right;
-        margin-top: auto;
-    }
-}
-
-.container--page {
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-.container--application {
-    
-    padding: 1rem 0;
-    max-width: 100% !important;
-    width: 100% !important;
-
-    @media screen and (min-width: $breakpoint--tablet) {
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
-    }
-}
-
-.container--float {
-    max-width: 100% !important;
-    width: 100% !important;
-}
-
-.container--application--primary {
-    padding: 2rem 0;
 }

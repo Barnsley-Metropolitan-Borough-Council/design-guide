@@ -70,3 +70,33 @@
     color: $color--lightest;
 
 }
+
+.related-content--muted {
+
+    // Print styles
+    background-color: transparent;
+
+    .related-content__heading {
+
+        // Default mobile styles
+        border-bottom: $color--primary 5px solid;
+        color: $color--primary;
+        background-color: transparent;
+    
+    }
+
+    .related-content__item {
+
+        // Default mobile styles
+        background-color: transparent;
+
+    }
+
+    .related-content__item--active {
+
+        // Default mobile styles
+        font-weight: bold;
+
+    }
+
+}

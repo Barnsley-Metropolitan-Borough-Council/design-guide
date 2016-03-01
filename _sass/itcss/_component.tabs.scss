@@ -1,0 +1,128 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * TABS OBJECT
+ * 
+ * Responsive tabs .
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    #COLLAPSED - SM AND UP
+\*------------------------------------*/
+
+/**
+ * To be determined.
+ */
+
+.tabs {
+}
+
+.tab__nav {
+    display: none;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: block;
+        margin-top: $padding--normal;
+    }
+}
+
+.tab__item {
+    display: inline-block;
+    border: 2px solid $color--lighterest;
+    margin-right: $padding--half;
+    background-color: $color--darkish;
+    color: $color--lightest;
+    margin-bottom: -2px;
+}
+
+.tab__item--active {
+    color: $color--primary;
+    font-weight: bold;
+    background-color: $color--page;
+    border-bottom: 2px solid #fff;
+}
+
+.tab__item--active .tab__link {
+    color: $color--primary;
+}
+
+.tab__item--active .tab__link:hover, .tab__item--active .tab__link:focus {
+    background-color: $color--lightest !important;
+    color: $color--primary !important;
+}
+
+.tab__link {
+    text-decoration: none;
+    color: $color--lightest;
+    display: inline-block;
+    padding: $padding--normal;
+    
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.tab__link:hover {
+    background-color: $color--primary;
+    color: $color--lightest;
+}
+
+.tab__content__body {
+    display: none;
+    padding: $padding--half;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: block;
+        padding: 0;
+    }
+}
+
+.tab__content__body--active {
+
+    display: block;
+
+}
+
+.tab__content__heading {
+
+    margin: 0;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: none;
+    }
+}
+
+.tab__content__heading__link {
+    display: block;
+    background-color: $color--darkish;
+    color: $color--lightest;
+    margin: $padding--half 0;
+    padding: $padding--half;
+    text-decoration: none;
+    font-size: $font__size--normal;
+}
+
+.tab__content {
+    display: block;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        display: none;
+    }
+}
+
+.tab__content--active {
+    display: block;
+
+    @media screen and (min-width: $breakpoint--tablet) {
+        border: 2px solid $color--lighterest;
+        padding: $padding--normal;
+    }
+}

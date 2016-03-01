@@ -10,54 +10,60 @@
  */
 
 .call-to-action {
-	text-align: center;
-	color: $color--primary;
-	background-color: $color--lighter;
+    text-align: center;
+    color: darken($color--primary, 10%);
+    background-color: $color--lighter;
+    position: relative;
 }
 
 .call-to-action__header {
-	background-color: $color--primary;
+    background-color: $color--primary;
 }
 
 .call-to-action__heading {
-	margin: 0;
-	padding: $padding--normal;	
-	color: $color--lightest;
-	font-size: $font__size--normal*1.33;
+    margin: 0;
+    padding: $padding--normal;
+    color: $color--lightest;
+    font-size: $font__size--normal*1.33;
 }
 
 .call-to-action__media {
-	margin: $padding--half;
-	vertical-align: middle;
+    margin: $padding--half;
+    vertical-align: middle;
 }
 
-.call-to-action__icon {    
-    max-height:125px;
+.call-to-action__icon {
+    max-height: 125px;
     fill: $color--primary;
 }
 
+.call-to-action__icon--photo {
+    border-radius: 100%;
+}
+
 .call-to-action__icon--secondary {
-    max-height: 24px;
+    height: 24px;
+    vertical-align: text-top;
     display: inline-block;
-    vertical-align: middle;
-    display:inline-block;
+    width: 24px;
+    margin-right: .25rem;
 }
 
 .call-to-action__primary {
-	display: block;
-	font-size: $font__size--normal*2;
-	font-style: normal;
-	font-weight: $font__weight--bold;
+    display: block;
+    font-size: $font__size--normal*2;
+    font-style: normal;
+    font-weight: $font__weight--bold;
     text-decoration: none;
-	color: $color--primary;
+    color: $color--primary;
 }
 
 .call-to-action__content {
-	padding: $padding--normal*3;
+    padding: $padding--normal*3;
 }
 
 .call-to-action__text {
-	margin: 0;
+    margin: 0;
 }
 
 .call-to-action__secondary {
@@ -65,6 +71,262 @@
 }
 
 .call-to-action__footer {
-	background-color: $color--lighterest;
-	padding: $padding--half;
+    background-color: $color--lighterest;
+    padding: $padding--half;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.call-to-action--mini {
+    background-color: $color--primary;
+    color: $color--lightest;
+
+    .call-to-action__header {
+        display: none;
+    }
+
+    .call-to-action__heading {
+        color: $color--lightest;
+    }
+
+    .call-to-action__media {
+        margin: 0;
+        margin-right: .5rem;
+        vertical-align: top;
+        width: 30%;
+        display: inline-block;
+    }
+
+    .call-to-action__icon {
+        fill: $color--lightest;
+        max-height: 64px;
+    }
+
+    .call-to-action__icon--secondary {
+    }
+
+    .call-to-action__primary {
+        color: $color--lightest;
+        font-size: 1.5rem;
+    }
+
+    .call-to-action__content {
+        color: $color--lightest;
+        padding: $padding--normal;
+    }
+
+    .call-to-action__text {
+        display: inline-block;
+        width: 60%;
+        text-align: left;
+        color: $color--lightest;
+    }
+
+    .call-to-action__secondary {
+        color: $color--lightest;
+    }
+
+    .call-to-action__footer {
+        color: $color--lightest;
+        background-color: darken($color--primary, 10%);
+        position: static;
+    }
+}
+
+.call-to-action--primary {
+    background-color: $color--primary;
+    color: $color--lightest;
+
+    .call-to-action__heading {
+        color: $color--lightest;
+    }
+
+    .call-to-action__icon {
+        fill: $color--lightest;
+    }
+
+    .call-to-action__primary {
+        color: $color--lightest;
+    }
+
+    .call-to-action__content {
+        color: $color--lightest;
+    }
+
+    .call-to-action__text {
+        color: $color--lightest;
+    }
+
+    .call-to-action__secondary {
+        color: $color--lightest;
+    }
+
+    .call-to-action__footer, .call-to-action__header {
+        color: $color--lightest;
+        background-color: darken($color--primary, 10%);
+    }
+
+        a {
+        color: $color--lightest;
+    }
+}
+
+.call-to-action--inverted {
+    background-color: $color--darkest;
+    color: $color--lightest;
+
+    .call-to-action__heading {
+        color: $color--lightest;
+    }
+
+    .call-to-action__icon {
+        fill: $color--lightest;
+    }
+
+    .call-to-action__primary {
+        color: $color--lightest;
+    }
+
+    .call-to-action__content {
+        color: $color--lightest;
+    }
+
+    .call-to-action__text {
+        color: $color--lightest;
+    }
+
+    .call-to-action__secondary {
+        color: $color--lightest;
+    }
+
+    .call-to-action__footer, .call-to-action__header {
+        color: $color--lightest;
+        background-color: darken($color--primary, 10%);
+    }
+
+    a {
+        color: $color--lightest;
+    }
+}
+
+//  Accent theme which is a shade off the primary colour
+.call-to-action--accent {
+    background-color: darken($color--primary, 10%);
+    color: $color--lightest;
+
+    .call-to-action__heading {
+        color: $color--lightest;
+    }
+
+    .call-to-action__icon {
+        fill: $color--lightest;
+    }
+
+    .call-to-action__primary {
+        color: $color--lightest;
+    }
+
+    .call-to-action__content {
+        color: $color--lightest;
+    }
+
+    .call-to-action__text {
+        color: $color--lightest;
+    }
+
+    .call-to-action__secondary {
+        color: $color--lightest;
+    }
+
+    .call-to-action__footer, .call-to-action__header {
+        color: $color--lightest;
+        background-color: $color--primary;
+    }
+
+        a {
+        color: $color--lightest;
+    }
+}
+
+//  Dark theme
+.call-to-action--dark {
+    background-color: $color--darkish;
+    color: $color--lightest;
+
+    .call-to-action__heading {
+        color: $color--lightest;
+    }
+
+    .call-to-action__icon {
+        fill: $color--lightest;
+    }
+
+    .call-to-action__primary {
+        color: $color--lightest;
+    }
+
+    .call-to-action__content {
+        color: $color--lightest;
+    }
+
+    .call-to-action__text {
+        color: $color--lightest;
+    }
+
+    .call-to-action__secondary {
+        color: $color--lightest;
+    }
+
+    .call-to-action__footer, .call-to-action__header {
+        color: $color--lightest;
+        background-color: darken($color--darkish, 10%);
+    }
+
+        a {
+        color: $color--lightest;
+    }
+}
+
+//  Light theme
+.call-to-action--light {
+    background-color: $color--lighter;
+    color: $color--text;
+
+    .call-to-action__heading {
+        color: $color--text;
+    }
+
+    .call-to-action__icon {
+        fill: $color--text;
+    }
+
+    .call-to-action__primary {
+        color: $color--text;
+    }
+
+    .call-to-action__content {
+        color: $color--text;
+    }
+
+    .call-to-action__text {
+        color: $color--text;
+    }
+
+    .call-to-action__secondary {
+        color: $color--text;
+    }
+
+    .call-to-action__footer, .call-to-action__header {
+        color: $color--text;
+        background-color: darken($color--lighter, 10%);
+    }
+
+        a {
+        color: $color--text;
+    }
+}
+
+//  Muted theme
+.call-to-action--muted {
 }

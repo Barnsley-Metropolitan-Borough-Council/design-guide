@@ -32,7 +32,6 @@ th,td {
     padding: $padding--half;
     border-bottom: solid 1px $color--lighter;
     white-space: normal; 
-    text-align: left;
 }
 
 thead th, thead td {

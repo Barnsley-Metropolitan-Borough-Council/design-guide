@@ -14,7 +14,7 @@
     
     //  Default mobile styles    
 
-    @media screen and (min-width: $breakpoint--desktop) {
+    @media screen and (min-width: $breakpoint--tablet) {
         
         position: relative;
     
@@ -27,18 +27,17 @@
     //  Default mobile styles
     display: inline-block;
     background: no-repeat $icon--bell center $color--primary;    
-    border: 1px solid $color--primary;
     color: transparent;
-    padding: $padding--normal $padding--normal;
-    margin: $padding--normal 0;
+    padding: $padding--normal*2 $padding--normal;
+    margin: 0;
     font-weight: normal;
     text-decoration: none;
 
     
-    @media screen and (min-width: $breakpoint--desktop) {
+    @media screen and (min-width: $breakpoint--tablet) {
         
         color: $color--lightest;
-        background: no-repeat $icon--bell $padding--normal*1.25 center $color--primary;  
+        background: no-repeat $icon--bell $padding--normal*1.5 center $color--primary;  
         padding-left: $padding--normal*3;
         position: relative;                        
         background-size: 1rem;
@@ -83,17 +82,16 @@
     background-color: $color--lightest;
     color: $color--primary;
     box-shadow: 0px 0px 3em 0 rgba(0,0,0,0.1);   
-    margin-top: -1 * $padding--normal; 
     text-align: left;
     border: 1px solid #ddd;
     border-top: 0;
     font-size: 0.9rem;
     left: 0;
     right: 0;
-    z-index: 2048;
+    z-index: 255;
     transition: all 0.2s linear;
 
-    @media screen and (min-width: $breakpoint--desktop) {
+    @media screen and (min-width: $breakpoint--tablet) {
 
         left: 0;
         right: auto;

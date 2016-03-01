@@ -97,7 +97,7 @@
         
         position: static;
         display: inline-block;
-        //margin: $padding--normal*2 $padding--normal $padding--normal*2 0; // This provides the header spacing on tablet
+        margin: $padding--normal*2 $padding--normal $padding--normal*2 0; // This provides the header spacing on tablet
         
     }
 
@@ -116,9 +116,9 @@
     padding: $padding--normal*2 $padding--normal;    
     display: inline-block;    
     background: no-repeat $icon--menu center;
-    color: transparent !important; // prevent accessibility text showing on focus
+    color: transparent;
 
-    @media screen and (min-width: $breakpoint--desktop) {
+    @media screen and (min-width: $breakpoint--tablet) {
                 
         display: none;
         background: none;
@@ -135,7 +135,7 @@
     right: 0;
     padding: $padding--normal;
 
-    @media screen and (min-width: $breakpoint--desktop) {
+    @media screen and (min-width: $breakpoint--tablet) {
 
         display: block;
         position: static;
@@ -239,7 +239,7 @@
 .masthead__search input[type=search] {
 
     // Default mobile styles
-    display: none;    
+    display: none;
     
 
     // Tablet and up styles
@@ -252,7 +252,6 @@
         display: inline-block;
         -webkit-appearance: none;
         width: 85%;        
-        margin-bottom: 0;
     
     }
 
@@ -265,41 +264,6 @@
     
 }
 
-
-.masthead__search--content {
-
-     background-color: transparent;
-     padding: 0;
-     margin: 0;
-
-     @media screen and (min-width: $breakpoint--tablet) {
-    
-        width: 20rem;
-        display: inline-block;
-
-        & input[type=search] {
-        
-            width: 75%;
-
-        }
-
-    }
-
-     @media screen and (min-width: $breakpoint--desktop) {
-    
-        width: 25rem;
-        display: inline-block;
-
-        & input[type=search] {
-        
-            width: 75%;
-
-        }
-
-    }
-
-}
-
 .masthead__search .search__button {
 
     // Tablet and up styles
@@ -307,7 +271,6 @@
     
         padding: $padding--normal $padding--normal*2;
         width: 15%;        
-        margin-bottom: 0;
     
     }
 
@@ -351,46 +314,4 @@
     margin-top: $padding--normal;
     line-height: $padding--normal*2;
 
-}
-
-.masthead__auth {
-    color: $color--lightest;
-    display: inline-block;
-    margin: 0;
-    padding: $padding--normal*1.75 $padding--normal;
-    float: right;
-}
-
-.masthead__auth__action {
-    color: $color--lightest;
-    background-color: #444;
-    padding: $padding--normal*0.25 $padding--normal*0.5;
-    display: inline-block;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 0.9rem;
-    margin: 0 $padding--half;
-}
-
-.masthead__auth__info {
-    display: none;
-
-    @media screen and (min-width:768px) {        
-        display: inline;
-        margin-right: 0.5rem;        
-    }
-}
-
-.masthead__auth__user {
-    display: inline-block;
-    max-width: 10rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    vertical-align: text-top;
-
-
-    @media screen and (min-width:768px) {    
-        max-width: 30rem;
-    }
 }

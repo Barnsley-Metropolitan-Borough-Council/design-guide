@@ -1,0 +1,124 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * PROFILE
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+.profile {
+    background-color: $color--lightest;
+    padding: $padding--normal * 2;
+    color: $color--text;
+    text-align: center;
+}
+
+.profile__name {
+    font-size: $font__size--normal * 1.5;
+    margin-top: $padding--half;
+}
+
+.profile__title {
+    font-size: $font__size--normal * 1.1;
+    margin: 0;
+    color: $color--primary;
+}
+
+.profile__description {
+    font-size: $font__size--normal * 0.9;
+    margin: $padding--half;
+}
+
+.profile__photo {
+    width: 120px;
+    height: 120px;
+}
+
+.profile--small {
+}
+
+.profile--light {
+}
+
+.profile--horizontal {
+    text-align: left;
+
+    .profile__person {
+        display: block;
+    }
+
+    .profile__name {
+        margin: 0;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .profile__title {
+        padding: 0.25rem 0 1rem;
+    }
+
+    .profile__description {
+        display: block;
+        margin: $padding--half 0 0 0;
+    }
+
+}
+
+
+.profile--primary {
+    background-color: $color--primary;
+    color: $color--lightest;
+
+    .profile__title {
+        color: $color--lightest;
+    }
+}
+
+.profile--inverted {
+    background-color: $color--darkestest;
+    color: $color--lightest;
+
+    .profile__title {
+        color: $color--lightest;
+    }
+}
+
+//  Accent theme which is a shade off the primary colour
+.profile--accent {
+    background-color: darken($color--primary, 10%);
+    color: $color--lightest;
+
+    .profile__title {
+        color: $color--lightest;
+    }
+}
+
+//  Dark theme
+.profile--dark {
+    background-color: $color--darkish;
+    color: $color--lightest;
+
+    .profile__title {
+        color: $color--lightest;
+    }
+}
+
+//  Light theme
+.profile--light {
+    background-color: $color--lighter;
+    color: $color--text;
+
+    .profile__title {
+        color: $color--text;
+    }
+}
+
+//  Muted theme
+.profile--muted {
+    font-size: 0.90rem;
+}

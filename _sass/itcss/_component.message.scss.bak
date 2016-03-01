@@ -1,0 +1,140 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ * MENU
+ * 
+ * Styles the sliding menu that appears from the right to highlight primary
+ * and secondary items as selected by the content editors.
+ *
+ */
+
+
+.message {
+
+    border-bottom: solid 1px #fff;
+    border-top: solid 1px #fff;
+    text-align: center;
+
+}
+
+.message__nav {
+
+    padding-bottom: 1rem;
+
+}
+.message--alert {
+
+    background-color: $color--primary;
+
+}
+
+.message--alert h1 {
+
+    color: #fff;
+
+}
+
+.message__link {
+
+    color: #fff;
+    border: solid 1px #fff;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem;
+    text-decoration: none;
+
+}
+
+.message__link:hover {
+
+    background-color: $color--primary-hover;
+
+}
+
+.message__link:focus {
+
+    background-color: $color--primary-hover;
+
+}
+
+
+/***********************\
+* 
+*  # NOTICE STYLES
+*
+\***********************/
+
+
+.message--notice {
+
+    background-color: $color--darkestest;
+    color: $color--lightest;
+    border: 0;
+    border-bottom: 1px solid lighten($color--darkestest,30%);
+
+    @media print {
+        display: none;
+    }
+
+}
+
+.message--notice h1 {
+
+    color: $color--primary;
+
+}
+
+.message--notice a {
+
+    color: $color--lightest;
+    text-decoration:underline;
+
+}
+
+.message--notice .message__link {
+
+    background-color: transparent;
+    border: none;
+    color: $color--middle;    
+    padding: 0;
+    text-decoration:underline;
+
+}
+
+.message--notice p {
+
+    margin: 0;
+
+}
+
+.message--info {
+
+    text-align: left;
+    padding: $padding--normal;
+    margin: $padding--normal 0;
+    background-color: lighten($color--proud, 30%);
+
+}
+
+.message--warn {
+    text-align: left;
+    padding: $padding--normal;
+    margin: $padding--normal 0;
+    background-color: lighten($color--team, 30%);
+}
+
+.message--error {
+    text-align: left;
+    padding: $padding--normal;
+    margin: $padding--normal 0;
+    background-color: lighten($color--excellent, 30%);
+}
+
+.message--success 
+{
+    text-align: left;
+    padding: $padding--normal;
+    margin: $padding--normal 0;
+    background-color: lighten($color--honest, 30%);
+}

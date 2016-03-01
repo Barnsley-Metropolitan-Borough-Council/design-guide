@@ -6,31 +6,58 @@
 	color: $color--lightest;
 	padding: $padding--normal * 2;
 
-}
+    table {
+        border: 0 ;
+        width: 100%;
+    }
 
-.service-list--inverted {
+    th,td {    
+        padding: $padding--half;
+        border-bottom: 0;
+        white-space: normal; 
+    }
 
-	background: $color--lightest;
-	color: $color--darkest;
+    thead th, thead td {
+        background-color: transparent;    
+        color: inherit;        
+    }
 
-	& .service-list__heading {
-		color: $color--primary;
-	}
+    td {
+        vertical-align: top;
+    }
 
-	& a, & .service-list__link {
-		color: $color--primary;
-	}
+    tbody tr:hover td, 
+    tbody tr:hover th {
 
-}
+        @media screen and (min-width: $breakpoint--tablet) {
+    
+            background-color: inherit;
+    
+        }
+    }
 
-.service-list--primary {
+    tr:nth-child(even) {
 
-	background: $color--primary;
-	color: $color--lightest;
+        @media screen and (min-width: $breakpoint--tablet) {
+    
+            background-color: transparent;
+    
+        }
 
-	& a, & .service-list__link {
-		color: $color--primary;
-	}
+    }
+
+    tbody th {
+        color: $color--darkestest;    
+
+        @media screen and (min-width: $breakpoint--tablet) {
+            background-color: transparent;
+        }
+    }
+
+    caption {
+        padding: $padding--normal;
+    }
+
 }
 
 .service-list__heading {
@@ -97,11 +124,14 @@
 
 }
 
-.service-list__content {
+.service-list--columns .service-list__content {
 
 	// Default mobile styles
+    text-align: center;
 
 	@media screen and (min-width: $breakpoint--tablet) {
+        text-align: left;
+
 	    -webkit-column-count: 2;
         -moz-column-count: 2; 
     	column-count: 2;
@@ -121,4 +151,74 @@
     	column-count: 4;
     }
 
+}
+
+.service-list--primary {
+
+	background: $color--primary;
+	color: $color--lightest;
+
+    & .service-list__heading {
+		color: $color--lightest;
+	}
+
+	& a, & .service-list__link {
+		color: $color--lightest;
+	}
+}
+
+.service-list--inverted {
+
+	background: $color--light;
+	color: $color--text;
+
+    & .service-list__heading {
+		color: $color--primary;
+	}
+
+	& a, & .service-list__link {
+		color: $color--text;
+	}
+}
+
+.service-list--accent {
+
+	background: darken($color--primary, 10%);
+	color: $color--lightest;
+
+    & .service-list__heading {
+		color: $color--lightest;
+	}
+
+	& a, & .service-list__link {
+		color: $color--lightest;
+	}
+}
+
+.service-list--dark {
+
+	background: $color--darkish;
+	color: $color--lightest;
+
+    & .service-list__heading {
+		color: $color--lightest;
+	}
+
+	& a, & .service-list__link {
+		color: $color--lightest;
+	}
+}
+
+.service-list--light {
+
+	background: $color--lighter;
+	color: $color--text;
+
+    & .service-list__heading {
+		color: $color--text;
+	}
+
+	& a, & .service-list__link {
+		color: $color--text;
+	}
 }

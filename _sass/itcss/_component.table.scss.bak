@@ -73,7 +73,7 @@
     }
 }
 
-.table--responsive td > div {
+.table--responsive td div {
     
     @media screen {
 
@@ -225,36 +225,4 @@
         display: table-header-group;
     }
 
-}
-
-.table--application {
-    border: 1px solid #ccc;
-}
-
-.table--application th {
-    text-decoration: none;
-}
-
-.table--application thead th, .table--application thead td {
-    background-color: transparent;
-    text-align: left;
-    color: #000;
-}
-
-.table--application .filter__cell input, .table--application .filter__cell select {
-    margin:0;
-    font-size:0.9rem;
-}
-
-.table--application thead td {
-    font-weight: normal;
-}
-
-.table--application tbody {
-
-}
-
-.table__heading__link a {
-    text-decoration: none;
-    color: #000;
 }

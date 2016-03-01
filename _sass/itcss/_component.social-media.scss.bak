@@ -11,11 +11,6 @@
 
 .social-media {
 	width: 100%;
-
-    @media screen and (min-width: $breakpoint--tablet) {
-        display: table;
-        table-layout: fixed;
-    }
 }
 
 .social-media__link {
@@ -29,7 +24,8 @@
 
 	@media screen and (min-width: $breakpoint--tablet) {
 
-		display: table-cell;		
+		display: inline-block;
+		width: 50%;
 
 	}
 	
@@ -51,16 +47,6 @@
 
 	&:hover {
 		background-color: darken(#28AAE1, 10%);
-	}
-
-}
-
-.social-media__link--blog {
-
-    background-color: #993B78;
-    
-    &:hover {
-		background-color: darken(#993B78, 10%);
 	}
 
 }

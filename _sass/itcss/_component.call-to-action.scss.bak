@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * CALL TO ACTION
+ * 
+ * To be determined.
+ *
+ */
+
+.call-to-action {
+	text-align: center;
+	color: $color--primary;
+	background-color: $color--lighter;
+}
+
+.call-to-action__header {
+	background-color: $color--primary;
+}
+
+.call-to-action__heading {
+	margin: 0;
+	padding: $padding--normal;	
+	color: $color--lightest;
+	font-size: $font__size--normal*1.33;
+}
+
+.call-to-action__media {
+	margin: $padding--half;
+	vertical-align: middle;
+}
+
+.call-to-action__icon {    
+    max-height:125px;
+    fill: $color--primary;
+}
+
+.call-to-action__icon--secondary {
+    max-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    display:inline-block;
+}
+
+.call-to-action__primary {
+	display: block;
+	font-size: $font__size--normal*2;
+	font-style: normal;
+	font-weight: $font__weight--bold;
+    text-decoration: none;
+	color: $color--primary;
+}
+
+.call-to-action__content {
+	padding: $padding--normal*3;
+}
+
+.call-to-action__text {
+	margin: 0;
+}
+
+.call-to-action__secondary {
+    text-decoration: none;
+}
+
+.call-to-action__footer {
+	background-color: $color--lighterest;
+	padding: $padding--half;
+}

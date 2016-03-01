@@ -1,0 +1,124 @@
+
+.service-list {
+
+	// Default mobile styles
+	background: $color--darkest;
+	color: $color--lightest;
+	padding: $padding--normal * 2;
+
+}
+
+.service-list--inverted {
+
+	background: $color--lightest;
+	color: $color--darkest;
+
+	& .service-list__heading {
+		color: $color--primary;
+	}
+
+	& a, & .service-list__link {
+		color: $color--primary;
+	}
+
+}
+
+.service-list--primary {
+
+	background: $color--primary;
+	color: $color--lightest;
+
+	& a, & .service-list__link {
+		color: $color--primary;
+	}
+}
+
+.service-list__heading {
+
+	// Default mobile styles
+	margin: 0 0 $padding--normal*2 0;
+	text-align: center;	
+
+}
+
+.service-list__list {
+
+	// Default mobile styles
+
+	@media screen and (min-width: $breakpoint--tablet) {
+	    -webkit-column-count: 2;
+        -moz-column-count: 2; 
+    	column-count: 2;
+
+    	-webkit-column-gap: $padding--normal*2;
+    	-moz-column-gap: $padding--normal*2;
+    	column-gap: $padding--normal*2;
+    }
+
+	@media screen and (min-width: $breakpoint--desktop) {
+	    -webkit-column-count: 3;
+        -moz-column-count: 3; 
+    	column-count: 3;
+    }
+
+}
+
+.service-list__item {
+
+	// Default mobile styles
+
+}
+
+.service-list__category {
+
+	// Default mobile styles
+	-webkit-column-span: all;
+ 	column-span: all;
+
+}
+
+.service-list__link {
+
+	// Default mobile styles
+	display: block;
+	border-bottom: 1px solid $color--dark;
+	padding: $padding--half $padding--normal;
+	color: $color--lightest;
+	text-decoration: none;
+	background: no-repeat $icon--next-light right $padding--half center;
+	background-size: 1rem;
+
+}
+
+.service-list__link:hover {
+
+	// Default mobile styles
+	background-color: $color--dark;
+
+}
+
+.service-list__content {
+
+	// Default mobile styles
+
+	@media screen and (min-width: $breakpoint--tablet) {
+	    -webkit-column-count: 2;
+        -moz-column-count: 2; 
+    	column-count: 2;
+
+    	-webkit-column-gap: $padding--normal*2;
+    	-moz-column-gap: $padding--normal*2;
+    	column-gap: $padding--normal*2;
+
+		& p:first-child {
+			margin-top: 0;
+		}
+    }
+
+	@media screen and (min-width: $breakpoint--desktop) {
+	    -webkit-column-count: 4;
+        -moz-column-count: 4; 
+    	column-count: 4;
+    }
+
+}

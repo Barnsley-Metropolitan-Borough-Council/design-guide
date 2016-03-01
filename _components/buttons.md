@@ -55,3 +55,29 @@ When hovering the lightness of the button should be increased by `$color--adjust
 ## Icon Buttons
 
 Upcoming feature.
+
+## Dropdown Buttons
+
+When you have multiple possible actions which otherwise would use a large amount of space you can group them in a dropdown button. You must also provide a non-javascript alternative - for example offering the same links in a noscript. 
+
+<div class="example">
+<div class="button--dropdown">
+    <a>Actions</a>
+    <div class="button--dropdown__menu">
+        <a class="button--dropdown__link">Action 1</a>
+        <a class="button--dropdown__link">Action 2</a>
+        <a class="button--dropdown__link">Action 3</a>
+    </div>
+</div>
+</div>
+
+{% highlight html %}
+<div class="button--dropdown">
+    <a>Actions</a>
+    <div class="button--dropdown__menu">
+        <a class="button--dropdown__link">Action 1</a>
+        <a class="button--dropdown__link">Action 2</a>
+        <a class="button--dropdown__link">Action 3</a>
+    </div>
+</div>
+{% endhighlight %}

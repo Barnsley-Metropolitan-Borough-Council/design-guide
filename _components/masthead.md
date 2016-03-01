@@ -200,3 +200,47 @@ A slim, link-free header for use on transactional applications.
     </div>        
 </header>
 {% endhighlight %}
+
+## Authenticated Application Masthead
+
+Masthead for use within Barnsley Council branded applications with authentication state.
+
+<div class="example">
+<header role="banner">
+    <div class="container container--screen ">
+        <div class="masthead container--float">
+            <div class="logo masthead__logo">
+                <h1 class="logo__heading">
+                    <a class="logo__link">
+                        Barnsley Council
+                    </a>
+                </h1>
+            </div>
+            <p class="masthead__auth">
+                <span class="masthead__auth__user"><span class="masthead__auth__info">Signed in as</span><strong>danielroddis@barnsley.gov.uk</strong></span>
+                <a href="#" class="masthead__auth__action">Log out</a>                                           
+            </p>
+        </div>
+    </div>
+</header>
+</div>
+
+{% highlight html %}
+<header role="banner">
+    <div class="container container--screen ">
+        <div class="masthead container--float">
+            <div class="logo masthead__logo">
+                <h1 class="logo__heading">
+                    <a class="logo__link">
+                        Barnsley Council
+                    </a>
+                </h1>
+            </div>
+            <p class="masthead__auth">
+                <span class="masthead__auth__user"><span class="masthead__auth__info">Signed in as</span><strong>danielroddis@barnsley.gov.uk</strong></span>
+                <a href="#" class="masthead__auth__action">Log out</a>                                    
+            </p>
+        </div>
+    </div>
+</header>
+{% endhighlight %}

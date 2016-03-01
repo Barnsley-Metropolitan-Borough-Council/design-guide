@@ -28,22 +28,9 @@
 
         display: block;
         margin-bottom: $padding--normal;
-        padding-top: $padding--normal * 1.5;
+        padding-top: $padding--normal;
 
     }
-}
-
-.breadcrumbs--coloured {
-
-    background-color: $color--primary;
-    color: $color--lightest;
-    padding: $padding--normal;
-    margin-bottom: 0;
-
-    /*a*/.breadcrumbs__link {
-        color: $color--lightest;
-    }
-
 }
 
 /*h1*/.breadcrumbs__heading {
@@ -79,11 +66,5 @@
 }
 
 /*a*/.breadcrumbs__link {
-
-}
-
-/*a*/.breadcrumbs__section__heading {
-
-    margin-top: 0;    
 
 }

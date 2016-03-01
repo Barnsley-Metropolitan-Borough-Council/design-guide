@@ -1,0 +1,31 @@
+﻿@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * SERVICE ITEM
+ * 
+ * To be determined.
+ *
+ */
+
+
+
+.service {
+    min-height: 4rem;
+    margin: 2rem;
+}
+
+.service__name, .service__name a {
+    color: $color--primary;
+    margin: 0;
+}
+
+.service__name:focus, .service__name a:focus {
+    color: $color--lightest;
+}
+
+.service__description {
+    font-size: $font__size--normal*0.9;
+    margin: $padding--normal*0.5 0;
+}

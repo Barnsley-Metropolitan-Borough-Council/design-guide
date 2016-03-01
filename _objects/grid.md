@@ -212,3 +212,60 @@ If you want the grid cells to fill the maximum vertical height of their cells as
     </div>
 </div>
 </div>
+
+## Grid with gutters
+
+Add the modifier class `grid--gutters` onto the grid to add responsive gutters between columns.
+
+<div class="example">
+<div class="grid grid--gutters">
+    <div class="grid__section">
+        <div class="grid__row">
+            <div class="grid__column grid__column--12">
+                grid__column--12
+            </div>
+        </div>
+        <div class="grid__row">
+            <div class="grid__column grid__column--8">
+                grid__column--8
+            </div><!--
+         --><div class="grid__column grid__column--4">
+                grid__column--4
+            </div>
+        </div>
+        <div class="grid__row">
+            <div class="grid__column grid__column--4">
+                grid__column--4
+            </div><!--
+         --><div class="grid__column grid__column--4">
+                grid__column--4
+            </div><!--
+         --><div class="grid__column grid__column--4">
+                grid__column--4
+            </div>
+        </div>
+        <div class="grid__row">
+            <div class="grid__column grid__column--6">
+                grid__column--6
+            </div><!--
+         --><div class="grid__column grid__column--6">
+                grid__column--6
+            </div>
+        </div>
+        <div class="grid__row">
+            <div class="grid__column grid__column--3">
+                grid__column--3
+            </div><!--
+         --><div class="grid__column grid__column--3">
+                grid__column--3
+            </div><!--
+         --><div class="grid__column grid__column--3">
+                grid__column--3
+            </div><!--
+         --><div class="grid__column grid__column--3">
+                grid__column--3
+            </div>
+        </div>
+    </div>
+</div>
+</div>

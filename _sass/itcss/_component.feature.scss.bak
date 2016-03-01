@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/// <reference path="../barnsley-council.scss" />
+
+/**
+ *
+ * FEATURE
+ * 
+ * To be determined.
+ *
+ */
+
+.feature {
+	padding: $padding--normal*2 $padding--normal*3;
+
+	@media screen and (min-width: $breakpoint--tablet) {
+
+		padding: $padding--normal*4 $padding--normal*3;
+
+	}
+}
+
+.feature__list {
+
+	//	default mobile layout
+	display: block;
+
+	//	tablet and higher
+	@media screen and (min-width: $breakpoint--tablet) {
+		display: table;
+		width: 100%;
+		table-layout:fixed;
+	}
+
+}
+
+.feature__list--bordered {
+	
+	.feature__item {
+
+		border-bottom: 1px solid $color--lighter;
+
+		@media screen and (min-width: $breakpoint--tablet) {
+			border-bottom: 0;
+			border-right: 1px solid $color--lighter;
+		}
+	}
+
+	.feature__item:last-child {
+
+		border: 0;
+
+	}
+
+}
+
+.feature__item {
+
+	//	default mobile layout
+	display: block;
+
+	//	tablet and higher
+	@media screen and (min-width: $breakpoint--tablet) {
+		display: table-cell;
+		width: 5%;	
+	}
+}
+
+.feature__heading {
+	color: $color--primary;
+	margin: 0;
+}
+
+.feature__content {
+
+}
+
+.feature__link {
+	color: $color--primary;
+}
+
+.feature--soft {
+
+	padding: $padding--normal*2;
+
+	@media screen and (min-width: $breakpoint--desktop) {
+
+		padding: $padding--normal*4;
+
+	}
+}
+
+.feature--supersoft {
+	
+	padding: $padding--normal*3;
+
+	@media screen and (min-width: $breakpoint--desktop) {
+
+		padding: $padding--normal*6;
+
+	}
+}
+
+.feature--photo {
+
+	background: no-repeat center;
+	background-size: cover;
+	position: relative;
+	
+	.feature__heading {
+		
+		z-index:3;
+		position: relative;
+
+	}
+
+	.feature__content {
+
+		display: block;
+		z-index:3;
+		position: relative;
+
+		@media screen and (min-width: $breakpoint--tablet) {
+
+			width: 50%;
+
+		}
+
+		@media screen and (min-width: $breakpoint--desktop) {
+
+			width: 33%;
+
+		}
+
+	}
+
+
+	.feature__link {
+		
+		position: relative;
+		z-index:3;
+
+	}
+
+}
+
+.feature--media {
+
+	padding: 0;
+
+	.feature__content {
+		padding: $padding--normal * 2;
+	}
+
+
+}
+
+.feature--muted {
+
+	.feature__heading {
+		color: $color--dark;
+		font-size: 1.2rem;
+	}
+
+	.feature__link {
+		color: $color--dark;
+	}
+
+	.feature__content {
+		font-size: 0.9rem;
+	}
+
+	color: $color--dark;	
+
+}
+
+.feature--inverted {
+
+	.feature__heading {
+		color: $color--lightest;
+	}
+
+	.feature__link {
+		color: $color--lightest;
+	}
+
+	background-color: $color--darkest;
+	color: $color--lightest;
+
+}
+
+.feature--primary {
+
+	.feature__heading {
+		color: $color--lightest;
+	}
+
+	.feature__link {
+		color: $color--lightest;
+	}
+
+	background-color: $color--primary;
+	color: $color--lightest;
+
+}
+
+.feature--photo:before {
+
+	// Default mobile styles
+	content: " ";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.75);
+
+	// Tablet and up styles
+	@media screen and (min-width: $breakpoint--tablet) {
+	
+		background: linear-gradient(to right, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.0) 60%, rgba(0,0,0,0) 100%);
+	
+	}
+
+	// Desktop and higher
+	@media screen and (min-width: $breakpoint--desktop) {
+
+		background: linear-gradient(to right, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.45) 35%, rgba(0,0,0,0.0) 45%, rgba(0,0,0,0) 100%);
+
+	}
+
+}

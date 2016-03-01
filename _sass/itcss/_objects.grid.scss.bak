@@ -69,27 +69,6 @@
         padding: $padding--normal * 2;
 
     }
-
-    & .grid__column:first-of-type {
-
-        // Default mobile styles
-
-        // Tablet styles
-        @media screen and (min-width: $breakpoint--tablet) {
-
-            padding-right: $padding--normal * 2;
-
-        }
-
-        // Desktop styles
-  	    @media screen and (min-width: $breakpoint--desktop) {
-    
-            padding-right: $padding--normal * 2;
-
-        }
-
-    }
-
 }
 
 /*div*/.grid__row--bordered .grid__column+.grid__column {
@@ -178,30 +157,4 @@
 
 	}
 
-}
-
-.grid__row {
-    content: "";
-    display: table;
-    clear: both;
-    width: 100%;
-}
-
-.grid__column {
-    float: left;
-}
-
-
-.grid--gutters .grid__column {
-    padding: 0 1rem;
-}
-
-@media screen and (min-width: 1140px) {
-    .grid--gutters .grid__column {
-        padding: 0 1rem 0 0;
-    }
-}
-
-.grid--gutters .grid__row .grid__column:first-of-type {
-    padding-left: 1rem;
 }
