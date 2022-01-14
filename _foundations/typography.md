@@ -7,7 +7,7 @@ status: production
 layout: page
 ---
 
-We use **Open Sans** as the primary typeface for headings and body text with a **sans-serif** fallback for browsers that don't support web fonts.
+We use **Lato** as the primary typeface for headings and body text with a **sans-serif** fallback for browsers that don't support web fonts.
 
 ## Headings
 
